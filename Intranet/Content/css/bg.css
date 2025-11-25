@@ -10,13 +10,32 @@
     }
 }
 
-@keyframes slide {
+/*@keyframes slide {
     0% {
         transform: translateX(-25%);
     }
 
     100% {
         transform: translateX(25%);
+    }
+}*/
+@keyframes snowFall {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+@keyframes snow {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 100%, 0);
     }
 }
 
@@ -26,9 +45,10 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: rgb(212,0,0);
 }
 
-.bg {
+/*.bg {
     animation: slide 50s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, rgb(138, 156, 255) 50%, rgb(194, 220, 255) 50%);
     bottom: 0;
@@ -47,10 +67,10 @@ body {
 
 .bg3 {
     animation-duration: 70s;
-}
+}*/
 
 .btn {
-    background-color: rgb(29, 35, 102);
+    background-color: rgb(119, 0, 0);
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -60,8 +80,6 @@ body {
 }
 
     .btn:hover {
-        background-color: white;
-        color: rgb(119, 139, 255);
         transform: scale(1.05);
     }
 
@@ -81,3 +99,88 @@ body {
         animation: pulseOut 5s ease-out infinite;
         opacity: 0;
     }
+
+/* BG NATAL*/
+.snow-container {
+    position: fixed; /* Fixa o container na tela, mesmo com scroll */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100%; /* Ocupa toda a altura da tela */
+    overflow: hidden; /* Impede que neve saia dos limites visíveis */
+    z-index: 1; /* Coloca a neve acima do fundo e abaixo do conteúdo */
+    pointer-events: none; /* A neve não interfere em cliques */
+}
+
+.snow {
+    display: block;
+    position: absolute; /* Permite posicionar camadas de neve */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /* Camada ocupa toda a tela */
+    pointer-events: none; /* Não bloqueia cliques */
+    transform: translate3d(0, -100%, 0); /* Começa fora do topo da tela */
+    animation-name: snow; /* Nome da animação aplicada via @keyframes */
+    animation-timing-function: linear; /* Neve cai com velocidade constante */
+    animation-iteration-count: infinite; /* Loop infinito */
+    background-repeat: repeat; /* Repete o padrão de flocos */
+}
+
+    /* Correct Durations */
+    .snow.foreground {
+        opacity: 0.03; /* Transparência suave */
+        background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png'); /* Imagem de flocos grandes */
+        animation-duration: 35s; /* Queda mais rápida */
+    }
+
+        .snow.foreground.layered {
+            animation-delay: 1s; /* Inicia depois de um atraso */
+            opacity: 0.02;
+        }
+
+    .snow.middleground {
+        background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png'); /* Imagem de flocos médios */
+        animation-duration: 175s; /* Queda mais lenta */
+    }
+
+        .snow.middleground.layered {
+            animation-delay: 1s;
+            opacity: 0.02;
+        }
+
+    .snow.background {
+        background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png'); /* Flocos menores */
+        animation-duration: 175s; /* Velocidade parecida com middleground */
+    }
+
+        .snow.background.layered {
+            animation-delay: 1s;
+            opacity: 0.02;
+        }
+
+.snow-ground {
+    width: 100%;
+    position: fixed; /* Sempre visível no fundo */
+    bottom: 0; /* Fica no rodapé da tela */
+    left: 0;
+    height: 75px; /* Altura do acúmulo de neve no chão */
+    overflow: hidden;
+    display: block;
+    z-index: 100; /* Acima de tudo */
+}
+
+    .snow-ground svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .snow-ground path {
+        fill: #ecf0f1; /* Cor da neve */
+        stroke: #ecf0f1;
+    }
+
+section.bloco {
+    position: relative;
+    background: #ffffff; /* Fundo branco em cada bloco */
+}

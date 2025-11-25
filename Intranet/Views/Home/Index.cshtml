@@ -66,31 +66,31 @@
 </script>
 @*HEADER*@
 <header id="home">
-    <div class="container-fluid mb-5 d-flex align-items-center justify-content-center">
+    <div class="container-fluid mb-5 d-flex align-items-center justify-content-between">
         <div id="cta">
             <h2 class="title">
                 Web<span>soft</span>
             </h2>
         </div>
         <div id="banner" class="d-none d-md-block position-relative">
-            <img src="~/Content/img/banner_novembro_azul.png" alt="" class="img-fluid">
-            <a href="http://192.168.0.200/intranet/OutubroRosa/index.html" target="_blank"
-               class="btn neon-pulse position-absolute bottom-0 end-0 m-4">
-                Saiba Mais
-            </a>
+            <img src="~/Content/img/ChatGPT Image 24 de nov. de 2025, 14_30_55.png" alt="" class="img-fluid" style="height:750px">
+            @*<a href="http://192.168.0.200/intranet/OutubroRosa/index.html" target="_blank"
+                   class="btn neon-pulse position-absolute bottom-0 end-0 m-4">
+                    Saiba Mais
+                </a>*@
         </div>
     </div>
 </header>
 
 @*MODAIS AVISOS BOLOTAS*@
 <section id="avisos">
-    <div class="container-fluid my-5 pb-5" style="background-color: rgb(63, 81, 182);">
+    <div class="container-fluid my-5 pb-5 border border-2" style="background-color: darkgreen; border-color:white;">
         <div class="py-5 fw-bolder text-center">
             <h2 class="tt4">
                 Avisos
             </h2>
         </div>
-        <div class="text-center" style="background-color: rgb(63, 81, 182); color: white;">
+        <div class="text-center" style="background-color: darkgreen; color: white;">
             <p>
                 <strong>Todos Avisos</strong> importantes Aparecerão aqui
                 <strong>Compartilhe</strong> no ambiente de trabalho.
@@ -148,9 +148,9 @@
 <div class="modal fade" id="encomenda" tabindex="-1" aria-labelledby="encomendaLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered mx-auto">
         <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:#6f42c1; color:white;">
+            <div class="modal-header" style="background-color:rgb(212,0,0); color:white;">
                 <h5 class="modal-title fw-bold" id="encomendaLabel">Entregas Pessoais</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                <button type="button" data-bs-dismiss="modal"
                         aria-label="Fechar"></button>
             </div>
             <div class="modal-body">
@@ -170,11 +170,11 @@
                     <li class="py-2"><strong>Limite:</strong> Volumes grandes não serão aceitos.</li>
                 </ul>
                 <div class="d-flex justify-content-center gap-2 mt-3">
-                    <button class="btn text-white" style="background-color:mediumpurple;" data-bs-toggle="modal"
+                    <button class="btn text-white" style="background-color:darkgreen;" data-bs-toggle="modal"
                             data-bs-target="#encomendaFull" data-bs-dismiss="modal">
                         Termo completo
                     </button>
-                    <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button class="btn " data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -184,9 +184,9 @@
 <div class="modal fade" id="encomendaFull" tabindex="-1" aria-labelledby="encomendaFullLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 100%;">
         <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:#6f42c1; color:white;">
+            <div class="modal-header" style="background-color:rgb(212,0,0); color:white;">
                 <h5 class="modal-title fw-bold" id="encomendaFullLabel">Termo Completo — Encomendas Pessoais</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                <button type="button" data-bs-dismiss="modal"
                         aria-label="Fechar"></button>
             </div>
 
@@ -202,7 +202,7 @@
             </div>
 
             <div class="modal-footer bg-light border-top-0">
-                <button class="btn text-white" style="background-color:mediumpurple;"
+                <button class="btn text-white" style="background-color:darkgreen;"
                         data-bs-dismiss="modal">
                     Fechar
                 </button>
@@ -215,9 +215,9 @@
 <div class="modal fade" id="emprestimo" tabindex="-1" aria-labelledby="emprestimoLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered mx-auto">
         <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:mediumpurple; color:white;">
+            <div class="modal-header" style="background-color:darkgreen; color:white;">
                 <h5 class="modal-title fw-bold" id="emprestimoLabel">Empréstimo Consignado</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                <button type="button" data-bs-dismiss="modal"
                         aria-label="Fechar"></button>
             </div>
 
@@ -247,11 +247,11 @@
                     </li>
                 </ul>
                 <div class="d-flex justify-content-center gap-2 mt-3">
-                    <button class="btn text-white" style="background-color:#6f42c1;" data-bs-toggle="modal"
+                    <button class="btn text-white" style="background-color:rgb(212,0,0);" data-bs-toggle="modal"
                             data-bs-target="#emprestimoFull" data-bs-dismiss="modal">
                         Termo completo
                     </button>
-                    <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button class="btn " data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -261,9 +261,9 @@
 <div class="modal fade" id="emprestimoFull" tabindex="-1" aria-labelledby="emprestimoFullLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 100%;">
         <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:mediumpurple; color:white;">
+            <div class="modal-header" style="background-color:darkgreen; color:white;">
                 <h5 class="modal-title fw-bold" id="emprestimoFullLabel">Termo Empréstimo Consignado</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                <button type="button" data-bs-dismiss="modal"
                         aria-label="Fechar"></button>
             </div>
             <div class="modal-body">
@@ -280,7 +280,7 @@
                 </div>
             </div>
             <div class="modal-footer bg-light border-top-0">
-                <button class="btn text-white" style="background-color:#6f42c1;"
+                <button class="btn text-white" style="background-color:rgb(212,0,0);"
                         data-bs-dismiss="modal">
                     Fechar
                 </button>
@@ -296,13 +296,13 @@
             Aniversariantes
         </h2>
     </div>
-    <div class="container table-responsive rounded-2 bg-white w-75">
+    <div class="container table-responsive rounded-2 bg-white w-75 border border-2">
         <table id="niver" class="table table-striped table-hover display">
-            <thead style="background-color: rgb(63, 81, 182); color: white;" ead>
+            <thead style="background-color: darkgreen; color: white;" ead>
                 <tr>
-                    <th style="background-color: rgb(63, 81, 182); color: white;">Nome</th>
-                    <th style="background-color: rgb(63, 81, 182); color: white;">Data</th>
-                    <th style="background-color: rgb(63, 81, 182); color: white;">Departamento</th>
+                    <th style="background-color: darkgreen; color: white;">Nome</th>
+                    <th style="background-color: darkgreen; color: white;">Data</th>
+                    <th style="background-color: darkgreen; color: white;">Departamento</th>
                 </tr>
             </thead>
             <tbody>
@@ -428,7 +428,7 @@
 
 @*CALENDARIO*@
 <section id="calendario" class="reveal">
-    <div class="container-fluid my-5 pb-5" style="background-color: rgb(101, 137, 255); color: black;">
+    <div class="container-fluid my-5 pb-5 border border-2" style="background-color: rgb(89,0,0); color: black;">
         <div class="fw-bolder text-center py-5">
             <h2 class="tt3">Calendário</h2>
         </div>
@@ -453,12 +453,12 @@
             Ginastica
         </h2>
     </div>
-    <div class="container table-responsive rounded-2 bg-white w-75  ">
+    <div class="container table-responsive rounded-2 bg-white w-75 border border-2">
         <table id="gym" class="table table-striped table-hover display">
-            <thead style="background-color: rgb(63, 81, 182); color: white;" ead>
+            <thead style="background-color: darkgreen; color: white;" ead>
                 <tr>
-                    <th style="background-color:rgb(101, 137, 255); color: white;">Data</th>
-                    <th style="background-color:rgb(101, 137, 255); color: white;">Nome</th>
+                    <th style="background-color:rgb(89,0,0); color: white;">Data</th>
+                    <th style="background-color:rgb(89,0,0); color: white;">Nome</th>
                 </tr>
             </thead>
             <tbody>
@@ -549,7 +549,7 @@
 
 @*INSTITUCIONAL*@
 <section id="regras" class="reveal">
-    <div class="container-fluid my-5 pb-5" style="background-color: rgb(63, 81, 182); color: white;">
+    <div class="container-fluid my-5 pb-5 border border-2" style="background-color: darkgreen; color: white;">
         <div class="py-5 fw-bolder text-center">
             <h2 class="tt4">
                 Institucional
@@ -632,21 +632,21 @@
             Horario de Almoço
         </h2>
     </div>
-    <div class="container table-responsive rounded-2 bg-white w-75  ">
+    <div class="container table-responsive rounded-2 bg-white w-75 border border-2">
         <div class="pt-3">
             <table class="hours table table-striped table-hover display">
-                <thead style="background-color: rgb(63, 81, 182); color: white;" ead>
+                <thead style="background-color: darkgreen; color: white;" ead>
                     <tr>
-                        <th style="background-color: rgb(63, 81, 182); color: white;" colspan="5" class="text-center">
+                        <th style="background-color: darkgreen; color: white;" colspan="5" class="text-center">
                             COZINHA
                         </th>
                     </tr>
                     <tr>
-                        <th style="background-color: rgb(63, 81, 182); color: white;">11h30min</th>
-                        <th style="background-color: rgb(63, 81, 182); color: white;">12h00min</th>
-                        <th style="background-color: rgb(63, 81, 182); color: white;">12h30min</th>
-                        <th style="background-color: rgb(63, 81, 182); color: white;">13h00min</th>
-                        <th style="background-color: rgb(63, 81, 182); color: white;">13h30min</th>
+                        <th style="background-color: darkgreen; color: white;">11h30min</th>
+                        <th style="background-color: darkgreen; color: white;">12h00min</th>
+                        <th style="background-color: darkgreen; color: white;">12h30min</th>
+                        <th style="background-color: darkgreen; color: white;">13h00min</th>
+                        <th style="background-color: darkgreen; color: white;">13h30min</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -690,18 +690,18 @@
         </div>
         <div class="pt-5">
             <table class="hours table table-striped table-hover py-5 display">
-                <thead style="background-color: rgb(63, 81, 182); color: white;" ead>
+                <thead style="background-color: darkgreen; color: white;" ead>
                     <tr>
-                        <th style="background-color: rgb(63, 81, 182); color: white;" colspan="5" class="text-center">
+                        <th style="background-color: darkgreen; color: white;" colspan="5" class="text-center">
                             REFEITÓRIO 1º PISO
                         </th>
                     </tr>
                     <tr>
-                        <th style="background-color: rgb(63, 81, 182); color: white;">12h00</th>
-                        <th style="background-color: rgb(63, 81, 182); color: white;">12h30</th>
-                        <th style="background-color: rgb(63, 81, 182); color: white;">13h00min</th>
-                        <th style="background-color: rgb(63, 81, 182); color: white;">13h15min</th>
-                        <th style="background-color: rgb(63, 81, 182); color: white;">13h30min</th>
+                        <th style="background-color: darkgreen; color: white;">12h00</th>
+                        <th style="background-color: darkgreen; color: white;">12h30</th>
+                        <th style="background-color: darkgreen; color: white;">13h00min</th>
+                        <th style="background-color: darkgreen; color: white;">13h15min</th>
+                        <th style="background-color: darkgreen; color: white;">13h30min</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -748,7 +748,7 @@
 
 @*LANCAMENTOS*@
 <section id="lancamentos" class="reveal">
-    <div class="container-fluid my-5 pb-5" style="background-color:rgb(101, 137, 255);">
+    <div class="container-fluid my-5 pb-5 border border-2" style="background-color:rgb(89,0,0);">
         <div class="py-5 fw-bolder text-center">
             <h2 class="tt3">Lançamentos</h2>
         </div>
@@ -788,14 +788,14 @@
         </h2>
     </div>
 
-    <div class="container table-responsive rounded-2 bg-white w-75  ">
+    <div class="container table-responsive rounded-2 bg-white w-75 border border-2">
         <table id="ramal" class="table table-striped table-hover display">
             <thead>
                 <tr>
-                    <th style="background-color:rgb(101, 137, 255); color: white;">Nome</th>
-                    <th style="background-color:rgb(101, 137, 255); color: white;">Ramal</th>
-                    <th style="background-color:rgb(101, 137, 255); color: white;">Email</th>
-                    <th style="background-color:rgb(101, 137, 255); color: white;">Departamento</th>
+                    <th style="background-color:rgb(89,0,0); color: white;">Nome</th>
+                    <th style="background-color:rgb(89,0,0); color: white;">Ramal</th>
+                    <th style="background-color:rgb(89,0,0); color: white;">Email</th>
+                    <th style="background-color:rgb(89,0,0); color: white;">Departamento</th>
                 </tr>
             </thead>
             <tbody>
@@ -1154,7 +1154,7 @@
 
 @*REGRAS RAMAIS*@
 <section id="rgramais" class="reveal">
-    <div class="container-fluid my-5 pb-5" style="background-color: rgb(63, 81, 182); color: white;">
+    <div class="container-fluid my-5 pb-5 border border-2" style="background-color: darkgreen; color: white;">
         <div class="py-5 fw-bolder text-center justify-content-center">
             <h2 class="tt4">
                 Regras do Telefone
