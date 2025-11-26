@@ -1,5 +1,5 @@
 .custom_nav-container {
-    position: fixed;
+    position:fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@
     height: auto;
 }
 
-#cta .title {
+/*#cta .title {
     font-size: 50px;
     font-weight: 800;
     color: black;
@@ -51,7 +51,7 @@
 
     #cta .title span {
         color: white;
-    }
+    }*/
 
 /*#home {
     display: flex;

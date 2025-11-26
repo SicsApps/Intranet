@@ -70,12 +70,9 @@ body {
 }*/
 
 .btn {
-    background-color: rgb(119, 0, 0);
-    color: white;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    padding: 10px;
     transition: all 0.4s ease;
 }
 
@@ -131,32 +128,29 @@ body {
     .snow.foreground {
         opacity: 0.03; /* Transparência suave */
         background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png'); /* Imagem de flocos grandes */
-        animation-duration: 35s; /* Queda mais rápida */
+        animation-duration: 185s; /* Queda mais rápida */
     }
 
         .snow.foreground.layered {
-            animation-delay: 1s; /* Inicia depois de um atraso */
-            opacity: 0.02;
+            opacity: 0.01;
         }
 
     .snow.middleground {
         background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png'); /* Imagem de flocos médios */
-        animation-duration: 175s; /* Queda mais lenta */
+        animation-duration: 125s; /* Queda mais lenta */
     }
 
         .snow.middleground.layered {
-            animation-delay: 1s;
-            opacity: 0.02;
+            opacity: 0.01;
         }
 
     .snow.background {
         background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png'); /* Flocos menores */
-        animation-duration: 175s; /* Velocidade parecida com middleground */
+        animation-duration: 75s; /* Velocidade parecida com middleground */
     }
 
         .snow.background.layered {
-            animation-delay: 1s;
-            opacity: 0.02;
+            opacity: 0.01;
         }
 
 .snow-ground {
@@ -164,7 +158,7 @@ body {
     position: fixed; /* Sempre visível no fundo */
     bottom: 0; /* Fica no rodapé da tela */
     left: 0;
-    height: 75px; /* Altura do acúmulo de neve no chão */
+    height: 50px; /* Altura do acúmulo de neve no chão */
     overflow: hidden;
     display: block;
     z-index: 100; /* Acima de tudo */
