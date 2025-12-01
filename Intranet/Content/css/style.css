@@ -50,12 +50,14 @@ section {
 }
 
 .efeito-lan {
-    transition: transform 1s ease-in-out;
+    display: inline-block;
+    transition: transform .6s ease;
 }
 
     .efeito-lan:hover {
-        transform: scale(1.04);
+        transform: scale(1.07) translateY(-6px);
     }
+
 
 /* BOLOTAS */
 .card-body-avisos {
@@ -90,7 +92,7 @@ section {
 
 /* TITULOS */
 .tt {
-    background-color: rgb(63, 81, 182);
+    background-color: darkgreen;
     color: white;
     border-radius: 15px 0;
     padding: 5px 15px;
@@ -98,7 +100,7 @@ section {
 }
 
 .tt2 {
-    background-color: rgb(101, 137, 255);
+    background-color: rgb(89,0,0);
     color: white;
     border-radius: 0 15px;
     padding: 5px 15px;
@@ -107,7 +109,7 @@ section {
 
 .tt3 {
     background-color: white;
-    color: rgb(101, 137, 255);
+    color: rgb(89,0,0);
     border-radius: 0 15px;
     padding: 5px 15px;
     display: inline-block;
@@ -115,7 +117,7 @@ section {
 
 .tt4 {
     background-color: white;
-    color: rgb(63, 81, 182);
+    color: darkgreen;
     border-radius: 0 15px;
     padding: 5px 15px;
     display: inline-block;
