@@ -177,12 +177,12 @@
     <Content Include="Content\img\bannerRosa.png" />
     <Content Include="Content\img\banner_novembro_azul.png" />
     <Content Include="Content\img\biosoft.png" />
+    <Content Include="Content\img\Clareador Rosa Mosqueta 110g.png" />
+    <Content Include="Content\img\Lisa Pé Esfoliante.png" />
     <Content Include="Content\img\modal.png" />
     <Content Include="Content\img\intraComputer.png" />
     <Content Include="Content\img\LogoRoxa.png" />
-    <Content Include="Content\img\ricinoCorte.png" />
     <Content Include="Content\img\softHairBranca.png" />
-    <Content Include="Content\img\Tiramake.png" />
     <Content Include="Scripts\JavaScript\calendar.js" />
     <Content Include="Scripts\JavaScript\datables.js" />
     <Content Include="Scripts\JavaScript\script.js" />

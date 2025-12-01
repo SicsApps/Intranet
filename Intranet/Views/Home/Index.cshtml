@@ -1,5 +1,5 @@
 ﻿    <div id="myModal" class="modal fade w-100 mx-auto" tabindex="-1" data-bs-backdrop="static">
-        <div class="modal-dialog">
+        <div class="modal-dialog  modal-dialog-centered mx-auto">
             <div class="modal-content">
                 <div class="progress" style="height: 15px;">
                     <div id="bp" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%;"></div>
@@ -8,18 +8,19 @@
                     <h5 class="modal-title ns">Orientação de Segurança - Bloqueio de Computadores</h5>
                 </div>
                 <div class="card-body p-4">
-                    <p>Prezados(as),</p>
-                    <p>Com o objetivo de reforçar a segurança das informações da empresa, pedimos que todos adotem o hábito de bloquear o computador sempre que se ausentarem da estação de trabalho, mesmo por curtos períodos.</p>
+                    <div>Prezados(as),</div>
+                    <div>Com o objetivo de reforçar a segurança das informações da empresa, pedimos que todos adotem o hábito de bloquear o computador sempre que se ausentarem da estação de trabalho, mesmo por curtos períodos.</div>
 
-                    <p>
+                    <div>
                         Para facilitar, utilize o atalho:
                         <strong>Windows + L</strong>
-                    </p>
+                    </div>
                 </div>
                 <div class="d-flex justify-content-center align-content-center">
                     <img src="~/Content/img/modal.png" class="img-fluid" />
                 </div>
                 <div class="modal-footer fw-bold">
+                    <div id="mM">Você poderá fechar em</div>
                     <div id="contRegress">3</div>
                     <button id="btnM" type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
@@ -38,6 +39,12 @@
     document.getElementById('btnM').style.display = 'none'
     setTimeout(function () {
         document.getElementById('btnM').style.display = 'inline'
+    }, 3000)
+
+    // close sumir e aparece
+    document.getElementById('mM').style.display = 'inline'
+    setTimeout(function () {
+        document.getElementById('mM').style.display = 'none'
     }, 3000)
 
     // segundos regressivo
@@ -66,7 +73,7 @@
 </script>
 @*HEADER*@
 <header @*id="home"*@>
-    <div class="container-fluid d-block">
+    <div class="container">
         @*<div id="cta">
             <h2 class="title">
                 Web<span>soft</span>
@@ -91,10 +98,10 @@
             </h2>
         </div>
         <div class="text-center" style="background-color: darkgreen; color: white;">
-            <p>
+            <div>
                 <strong>Todos Avisos</strong> importantes Aparecerão aqui
                 <strong>Compartilhe</strong> no ambiente de trabalho.
-            </p>
+            </div>
         </div>
         <div class="row pt-5 justify-content-center">
             <div class="col d-flex justify-content-center text-center">
@@ -104,10 +111,10 @@
                             <i class="fa-solid fa-download px-1"></i>
                             Entregas pessoais
                         </h5>
-                        <p class="card-text text-break">
+                        <div class="card-text text-break">
                             Regras para o recebimento de entregas pessoais
                             no ambiente de trabalho.
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,10 +124,10 @@
                         <h5 class="card-title py-2 text-danger">
                             Empréstimos
                         </h5>
-                        <p class="card-text">
+                        <div class="card-text">
                             Informações sobre empréstimo consignado: o que você precisa
                             saber antes de contratar.
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,10 +139,10 @@
                                 <i class="fa-solid fa-headset px-1"></i>
                                 Atenção às Regras
                             </h5>
-                            <p class="card-text">
+                            <div class="card-text">
                                 Fique atento! Erros durante as ligações têm gerado cobranças indevidas a nossa
                                 Empresa.
-                            </p>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -148,7 +155,7 @@
 <div class="modal fade" id="encomenda" tabindex="-1" aria-labelledby="encomendaLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered mx-auto">
         <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:rgb(212,0,0); color:white;">
+            <div class="modal-header" style="background-color:rgb(197,0,0); color:white;">
                 <h5 class="modal-title fw-bold" id="encomendaLabel">Entregas Pessoais</h5>
             </div>
             <div class="modal-body">
@@ -182,12 +189,9 @@
 <div class="modal fade" id="encomendaFull" tabindex="-1" aria-labelledby="encomendaFullLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 100%;">
         <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:rgb(212,0,0); color:white;">
+            <div class="modal-header" style="background-color:rgb(197,0,0); color:white;">
                 <h5 class="modal-title fw-bold" id="encomendaFullLabel">Termo Completo — Encomendas Pessoais</h5>
-                <button type="button" data-bs-dismiss="modal"
-                        aria-label="Fechar"></button>
             </div>
-
             <div class="modal-body">
                 <div class="row g-3">
                     <div class="col-md-6">
@@ -216,7 +220,6 @@
             <div class="modal-header" style="background-color:darkgreen; color:white;">
                 <h5 class="modal-title fw-bold" id="emprestimoLabel">Empréstimo Consignado</h5>
             </div>
-
             <div class="modal-body">
                 <ul class="list-unstyled">
                     <li class="py-2">
@@ -243,7 +246,7 @@
                     </li>
                 </ul>
                 <div class="d-flex justify-content-center gap-2 mt-3">
-                    <button class="btn text-white" style="background-color:rgb(212,0,0);" data-bs-toggle="modal"
+                    <button class="btn text-white" style="background-color:rgb(197,0,0);" data-bs-toggle="modal"
                             data-bs-target="#emprestimoFull" data-bs-dismiss="modal">
                         Termo completo
                     </button>
@@ -259,24 +262,22 @@
         <div class="modal-content bg-light">
             <div class="modal-header" style="background-color:darkgreen; color:white;">
                 <h5 class="modal-title fw-bold" id="emprestimoFullLabel">Termo Empréstimo Consignado</h5>
-                <button type="button" data-bs-dismiss="modal"
-                        aria-label="Fechar"></button>
             </div>
             <div class="modal-body">
                 <div class="row g-3">
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <img class="img-fluid shadow-sm" src="~/Content/img/1ec.jpg" alt="">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <img class="img-fluid shadow-sm" src="~/Content/img/2ec.jpg" alt="">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <img class="img-fluid shadow-sm" src="~/Content/img/3ec.jpg" alt="">
                     </div>
                 </div>
             </div>
             <div class="modal-footer bg-light border-top-0">
-                <button class="btn text-white" style="background-color:rgb(212,0,0);"
+                <button class="btn text-white" style="background-color:rgb(197,0,0);"
                         data-bs-dismiss="modal">
                     Fechar
                 </button>
@@ -303,120 +304,36 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Kemilly Caroline</td>
-                    <td>02/10/2025</td>
+                    <td>Joyce Eduarda</td>
+                    <td>19/12/2025</td>
                     <td>Produção</td>
                 </tr>
                 <tr>
-                    <td>Alessandra Ramos</td>
-                    <td>07/10/2025</td>
+                    <td>Ranielly Cristina</td>
+                    <td>20/12/2025</td>
                     <td>Produção</td>
                 </tr>
                 <tr>
-                    <td>Reginaldo Alves</td>
-                    <td>07/10/2025</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Gabriela Maciel</td>
-                    <td>14/10/2025</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Pamela Regina</td>
-                    <td>27/10/2025</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Karolina Chaves</td>
-                    <td>19/10/2025</td>
+                    <td>Paula Mendes</td>
+                    <td>02/12/2025</td>
                     <td>Administrativo</td>
                 </tr>
                 <tr>
-                    <td>Jaqueline Rodrigues</td>
-                    <td>25/10/2025</td>
+                    <td>Victor Cesar</td>
+                    <td>06/12/2025</td>
                     <td>Administrativo</td>
                 </tr>
                 <tr>
-                    <td>Rodrigo Rosa</td>
-                    <td>12/10/2025</td>
-                    <td>Elza/CD</td>
-                </tr>
-                <tr>
-                    <td>Tiago Ribeiro</td>
-                    <td>15/10/2025</td>
-                    <td>Distribuidora/Aplique</td>
-                </tr>
-                <tr>
-                    <td>Luciano Vieira</td>
-                    <td>15/10/2025</td>
+                    <td>Luiz Guilherme</td>
+                    <td>16/12/2025</td>
                     <td>Administrativo</td>
                 </tr>
                 <tr>
-                    <td>Alana Cassia</td>
-                    <td>14/11/2025</td>
-                    <td>Produção</td>
+                    <td>camille de Cassia</td>
+                    <td>14/12/2025</td>
+                    <td>e-commerce</td>
                 </tr>
-                <tr>
-                    <td>Maria José</td>
-                    <td>14/11/2025</td>
-                    <td>Estoque</td>
-                </tr>
-                <tr>
-                    <td>Yuri Oliveira</td>
-                    <td>15/11/2025</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Hudson Adriano</td>
-                    <td>27/11/2025</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Luciene Pereira</td>
-                    <td>30/11/2025</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Natã Benjamim</td>
-                    <td>10/11/2025</td>
-                    <td>Administrativo</td>
-                </tr>
-                <tr>
-                    <td>Gerald Wagner</td>
-                    <td>15/11/2025</td>
-                    <td>Administrativo</td>
-                </tr>
-                <tr>
-                    <td>Leticia Sousa</td>
-                    <td>19/11/2025</td>
-                    <td>Administrativo</td>
-                </tr>
-                <tr>
-                    <td>Aprendiz Mariane</td>
-                    <td>21/11/2025</td>
-                    <td>Administrativo</td>
-                </tr>
-                <tr>
-                    <td>Luiz Gustavo</td>
-                    <td>23/11/2025</td>
-                    <td>Administrativo</td>
-                </tr>
-                <tr>
-                    <td>Karina Flavia</td>
-                    <td>25/11/2025</td>
-                    <td>Administrativo</td>
-                </tr>
-                <tr>
-                    <td>Dayse Xavier</td>
-                    <td>27/11/2025</td>
-                    <td>Administrativo</td>
-                </tr>
-                <tr>
-                    <td>Lucas Vinicius</td>
-                    <td>19/11/2025</td>
-                    <td>Elza/CD</td>
-                </tr>
+                
             </tbody>
         </table>
     </div>
@@ -459,84 +376,136 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>03/11/2025</td>
+                    <td>01/12/2025</td>
+                    <td>Andreza</td>
+                </tr>
+                <tr>
+                    <td>02/12/2025</td>
+                    <td>Arthur</td>
+                </tr>
+                <tr>
+                    <td>03/12/2025</td>
+                    <td>Berenice</td>
+                </tr>
+                <tr>
+                    <td>04/12/2025</td>
+                    <td>Climacia Oliveira</td>
+                </tr>
+                <tr>
+                    <td>05/12/2025</td>
+                    <td>Danielle Stefânia</td>
+                </tr>
+                <tr>
+                    <td>08/12/2025</td>
+                    <td>Feriado</td>
+                </tr>
+                <tr>
+                    <td>09/12/2025</td>
+                    <td>Dayse Mara</td>
+                </tr>
+                <tr>
+                    <td>10/12/2025</td>
+                    <td>Dayse Xavier</td>
+                </tr>
+                <tr>
+                    <td>11/12/2025</td>
+                    <td>Deivid Rodrigues</td>
+                </tr>
+                <tr>
+                    <td>12/12/2025</td>
+                    <td>Fagner Miguel</td>
+                </tr>
+                <tr>
+                    <td>15/12/2025</td>
+                    <td>Felipe</td>
+                </tr>
+                <tr>
+                    <td>16/12/2025</td>
                     <td>Gerald Wagner</td>
                 </tr>
                 <tr>
-                    <td>04/11/2025</td>
-                    <td>Isadora MIrella</td>
+                    <td>17/12/2025</td>
+                    <td>Isadora Mirella</td>
                 </tr>
                 <tr>
-                    <td>05/11/2025</td>
-                    <td>Izadora Amora</td>
-                </tr>
-                <tr>
-                    <td>06/11/2025</td>
+                    <td>05/01/2026</td>
                     <td>Jaqueline</td>
                 </tr>
                 <tr>
-                    <td>07/11/2025</td>
+                    <td>06/01/2026</td>
                     <td>João Victor</td>
                 </tr>
                 <tr>
-                    <td>10/11/2025</td>
+                    <td>07/01/2026</td>
                     <td>Karolina</td>
                 </tr>
                 <tr>
-                    <td>11/11/2025</td>
+                    <td>08/01/2026</td>
                     <td>Karoline Oliveira</td>
                 </tr>
                 <tr>
-                    <td>12/11/2025</td>
-                    <td>Livia Carvalho</td>
+                    <td>09/01/2026</td>
+                    <td>Lívia Carvalho</td>
                 </tr>
                 <tr>
-                    <td>13/11/2025</td>
-                    <td>Luiz Gustavo</td>
+                    <td>12/01/2026</td>
+                    <td>Luiz Gustavo </td>
                 </tr>
                 <tr>
-                    <td>14/11/2025</td>
+                    <td>13/01/2026</td>
                     <td>Natã</td>
                 </tr>
                 <tr>
-                    <td>17/11/2025</td>
+                    <td>14/01/2026</td>
                     <td>Paula</td>
                 </tr>
                 <tr>
-                    <td>18/11/2025</td>
+                    <td>15/01/2026</td>
                     <td>Pedro Ivo</td>
                 </tr>
                 <tr>
-                    <td>19/11/2025</td>
+                    <td>16/01/2026</td>
                     <td>Quintiliana (Tininha)</td>
                 </tr>
                 <tr>
-                    <td>20/11/2025</td>
-                    <td>Tatiane Franco</td>
-                </tr>
-                <tr>
-                    <td>21/11/2025</td>
-                    <td>Thalyta</td>
-                </tr>
-                <tr>
-                    <td>24/11/2025</td>
+                    <td>19/01/2026</td>
                     <td>Thiago Soares</td>
                 </tr>
                 <tr>
-                    <td>25/11/2025</td>
+                    <td>20/01/2026</td>
                     <td>Victor César</td>
                 </tr>
                 <tr>
-                    <td>26/11/2025</td>
+                    <td>21/01/2026</td>
                     <td>Adila Ribeiro</td>
                 </tr>
                 <tr>
-                    <td>27/11/2025</td>
+                    <td>22/01/2026</td>
                     <td>Alana</td>
                 </tr>
                 <tr>
-                    <td>28/11/2025</td>
+                    <td>23/01/2026</td>
                     <td>Aline Moreira</td>
+                </tr>
+                <tr>
+                    <td>26/01/2026</td>
+                    <td>Andreza</td>
+                </tr>
+                <tr>
+                    <td>27/01/2026</td>
+                    <td>Arthur</td>
+                </tr>
+                <tr>
+                    <td>28/01/2026</td>
+                    <td>Berenice </td>
+                </tr>
+                <tr>
+                    <td>28/01/2026</td>
+                    <td>Crimacia Oliveira</td>
+                </tr>
+                <tr>
+                    <td>29/01/2026</td>
+                    <td>Danielle Stefânia </td>
                 </tr>
             </tbody>
         </table>
@@ -553,72 +522,72 @@
         </div>
         <div class="col-12">
             <div class="text-center mb-5">
-                <p>
-                    <strong>Respeite as diferenças</strong> e colabore para a boa
-                    <strong>convivência e harmonia</strong> no ambiente de trabalho.
-                </p>
+                <strong>Respeite as diferenças</strong> e colabore para a boa
+                <strong>convivência e harmonia</strong> no ambiente de trabalho.
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="p-5">
-                        <h5 class="text-center">
-                            TOM DE VOZ
-                        </h5>
-                        <p>
-                            <strong>Tenha atenção</strong> para não atrapalhar pessoas que estiverem ao seu lado.
-                        </p>
-                        <hr>
-                        <h5 class="text-center">
-                            SEJA ECOLÓGICO
-                        </h5>
-                        <p>
-                            Pratique os 3 Rs: <br>
-                            <strong>Reduza, Reutilize e Recicle.</strong>
-                        </p>
+        </div>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-sm-4">
+                    <h5 class="text-center">
+                        TOM DE VOZ
+                    </h5>
+                    <hr />
+                    <div>
+                        <strong>Tenha atenção</strong> para não atrapalhar pessoas que estiverem ao seu lado.
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-5">
-                        <h5 class="text-center">
-                            AMBIENTE
-                        </h5>
-                        <p>
-                            Um espaço organizado aumenta a, <strong>produtividade e o bem-estar</strong> diario.
-                        </p>
-                        <hr>
-                        <h5 class="text-center">
-                            LIGAÇÕES
-                        </h5>
-                        <p>
-                            <strong>Seja gentil</strong>, anote o recado e <strong>passe para o responsavel</strong>
-                            assim que possível.
-                        </p>
+                <div class="col-sm-4">
+                    <h5 class="text-center">
+                        SEJA ECOLÓGICO
+                    </h5>
+                    <hr />
+                    <div>
+                        Pratique os 3 Rs: <br>
+                        <strong>Reduza, Reutilize e Recicle.</strong>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-5">
-                        <h5 class="text-center">
-                            LOCAL DE TRABALHO
-                        </h5>
-                        <p>
-                            <strong>Não comente</strong> fofocas e <strong>não crie</strong> ou espalhe boatos no
-                            local.
-                        </p>
-                        <hr>
-                        <h5 class="text-center">
-                            ENTRE RAMAIS
-                        </h5>
-                        <p>
-                            Não insista em uma ligação caso o ramal esteja ocupado, <strong>
-                                tente mais
-                                tarde.
-                            </strong>
-                        </p>
+                <div class="col-sm-4">
+                    <h5 class="text-center">
+                        AMBIENTE LOCAL
+                    </h5>
+                    <hr />
+                    <div>
+                        Um espaço organizado aumenta a, <strong>produtividade e o bem-estar</strong> diario.
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-center">
+                        RECADOS DO SETOR
+                    </h5>
+                    <hr />
+                    <div>
+                        <strong>Seja gentil</strong>, anote o recado e <strong>passe para o responsavel</strong>
+                        assim que possível.
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-center">
+                        LOCAL DE TRABALHO
+                    </h5>
+                    <hr />
+                    <div>
+                        <strong>Não comente</strong> fofocas e <strong>não crie</strong> ou espalhe boatos no Ambiente de trabalho.
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-center">
+                        ENTRE RAMAIS
+                    </h5>
+                    <hr />
+                    <div>
+                        Não insista em uma ligação caso o ramal esteja ocupado, <strong>tente maistarde.</strong>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </section>
 
 @*ESCALA DO ALMOCO*@
@@ -748,32 +717,27 @@
         <div class="py-5 fw-bolder text-center">
             <h2 class="tt3 border border-2">Lançamentos</h2>
         </div>
-        <div class="row pt-5 g-4">
-            <div class="col-md-6 d-flex align-items-end">
-                <div class=" text-center w-100">
-                    <img src="~/Content/img/ricinoCorte.png" class="img-fluid efeito-lan mx-auto"
-                         style="max-width: 100%; max-height: 332px;" alt="">
-                    <div class="card-body d-flex flex-column justify-content-center">
-                        <h5 class="card-title text-white">Shampoo de Rícino</h5>
-                        <!-- <a href="https://loja.softhair.com.br/" target="_blank"
-                            class="btn btn-light rounded-pill mt-auto">Veja Mais</a> -->
-                    </div>
+        <div class="row pt-5">
+            <div class="col-md-6 d-block text-center align-content-end">
+                <img src="~/Content/img/Lisa Pé Esfoliante.png" class="img-fluid w-50 efeito-lan" alt="">
+                <div class="card-body py-3">
+                    <h5 class="card-title text-center tt4" style="color:rgb(89,0,0);">Lisa Pé</h5>
+                    <!-- <a href="https://loja.softhair.com.br/" target="_blank"
+                        class="btn btn-light rounded-pill mt-auto">Veja Mais</a> -->
                 </div>
             </div>
 
-            <div class="col-md-6 d-flex align-items-end">
-                <div class="text-center w-100">
-                    <img src="~/Content/img/Tiramake.png" class="img-fluid efeito-lan mx-auto"
-                         style="max-width: 300px;" alt="">
-                    <div class="card-body d-flex flex-column justify-content-center">
-                        <h5 class="card-title text-white">Tira Make</h5>
-                        <!-- <a href="https://loja.softhair.com.br/sabonete-liquido-tira-manchas-soft-hair"
-                            target="_blank" class="btn btn-light rounded-pill mt-auto">Veja Mais</a> -->
-                    </div>
+            <div class="col-md-6 d-block text-center align-content-end">
+                <img src="~/Content/img/Clareador Rosa Mosqueta 110g.png" class="img-fluid w-75 efeito-lan" alt="">
+                <div class="card-body py-3">
+                    <h5 class="card-title text-center tt4" style="color:rgb(89,0,0);">Lisa Clareador</h5>
+                    <!-- <a href="https://loja.softhair.com.br/sabonete-liquido-tira-manchas-soft-hair"
+                        target="_blank" class="btn btn-light rounded-pill mt-auto">Veja Mais</a> -->
                 </div>
             </div>
         </div>
     </div>
+
 </section>
 
 @*RAMAIS*@
@@ -1150,53 +1114,55 @@
 
 @*REGRAS RAMAIS*@
 <section id="rgramais" class="reveal">
-    <div class="container-fluid my-5 pb-5 border border-2" style="background-color: darkgreen; color: white;">
-        <div class="py-5 fw-bolder text-center justify-content-center">
+    <div class="container-fluid my-5 g-5 border border-2" style="background-color: darkgreen; color: white;">
+        <div class="py-5 fw-bolder text-center d-block align-content-center justify-content-center">
             <h2 class="tt4 border border-2">
                 Regras do Telefone
             </h2>
         </div>
 
         <div class="text-center">
-            <p>
+            <div>
                 Siga estas <strong>instruções</strong> para usar corretamente o <strong>
                     sistema telefônico
                     interno
                 </strong>:
-            </p>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 p-5 g-4 flex-column">
-                <h5 class="text-center">
-                    LIGAÇÕES INTERNAS
-                </h5>
-                <hr>
-                <p>
-                    Disque: 5 + Ramal desejado.<br>
-                    <strong>Para Transferir Ligações:</strong> Pressione Flash + ramal desejado.
-                </p>
-            </div>
-            <div class="col-md-4 p-5 g-4 flex-column">
-                <h5 class="text-center">
-                    INTERURBANAS FIXO
-                </h5>
-                <hr>
-                <p>
-                    Disque: 0 + DDD + Numero de Telefone
-                    <strong>Atenção:</strong> Não utilize código de operadora.
-                    Fixo para celular são <strong>proibidas</strong>.
-                </p>
-            </div>
-            <div class="col-md-4 p-5 g-4 flex-column">
-                <h5 class="text-center">
-                    INTERURBANAS CELULAR
-                </h5>
-                <hr>
-                <p>
-                    Disque: <strong>021</strong> + DDD + Numero do Celular
-                    Sempre utilize a operadora <strong>Claro</strong>.
-                    Em caso de dúvidas, contate o <strong>setor de TI</strong>.
-                </p>
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-sm-4">
+                    <h5 class="text-center">
+                        LIGAÇÕES INTERNAS
+                    </h5>
+                    <hr>
+                    <div>
+                        Disque: 5 + Ramal desejado.<br>
+                        <strong>Para Transferir Ligações:</strong> Pressione Flash + ramal desejado.
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-center">
+                        INTERURBANAS FIXO
+                    </h5>
+                    <hr>
+                    <div>
+                        Disque: 0 + DDD + Numero de Telefone
+                        <strong>Atenção:</strong> Não utilize código de operadora.
+                        Fixo para celular são <strong>proibidas</strong>.
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="text-center">
+                        INTERURBANAS CELULAR
+                    </h5>
+                    <hr>
+                    <div>
+                        Disque: <strong>021</strong> + DDD + Numero do Celular
+                        Sempre utilize a operadora <strong>Claro</strong>.
+                        Em caso de dúvidas, contate o <strong>setor de TI</strong>.
+                    </div>
+                </div>
             </div>
         </div>
     </div>

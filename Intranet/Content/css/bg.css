@@ -45,7 +45,7 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(212,0,0);
+    background-color: rgb(197,0,0);
 }
 
 /*.bg {
@@ -146,7 +146,7 @@ body {
 
     .snow.background {
         background-image: url('https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png'); /* Flocos menores */
-        animation-duration: 75s; /* Velocidade parecida com middleground */
+        animation-duration: 55s; /* Velocidade parecida com middleground */
     }
 
         .snow.background.layered {
@@ -158,7 +158,7 @@ body {
     position: fixed; /* Sempre visível no fundo */
     bottom: 0; /* Fica no rodapé da tela */
     left: 0;
-    height: 50px; /* Altura do acúmulo de neve no chão */
+    height: 65px; /* Altura do acúmulo de neve no chão */
     overflow: hidden;
     display: block;
     z-index: 100; /* Acima de tudo */
