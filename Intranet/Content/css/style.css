@@ -8,6 +8,25 @@
     }
 }
 
+/*NAV*/
+.custom_nav-container {
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+
+.dropdown-item:hover {
+    background-color: mediumpurple;
+    color: white;
+}
+
+.navbar-brand img {
+    max-width: 125px;
+    width: auto;
+    height: auto;
+}
+
 a,
 p {
     font-size: 15px;
@@ -20,10 +39,6 @@ h5 {
 
 section {
     scroll-margin-top: 100px;
-}
-
-.container-fluid {
-    border-radius: 0 75px 0 75px;
 }
 
 /* EFEITO SECTIONS */
@@ -92,7 +107,7 @@ section {
 
 /* TITULOS */
 .tt {
-    background-color: darkgreen;
+    background-color: slateblue;
     color: white;
     border-radius: 15px 0;
     padding: 5px 15px;
@@ -100,7 +115,7 @@ section {
 }
 
 .tt2 {
-    background-color: rgb(89,0,0);
+    background-color: purple;
     color: white;
     border-radius: 0 15px;
     padding: 5px 15px;
@@ -109,7 +124,7 @@ section {
 
 .tt3 {
     background-color: white;
-    color: rgb(89,0,0);
+    color: mediumpurple;
     border-radius: 0 15px;
     padding: 5px 15px;
     display: inline-block;
@@ -117,7 +132,7 @@ section {
 
 .tt4 {
     background-color: white;
-    color: darkgreen;
+    color: purple;
     border-radius: 0 15px;
     padding: 5px 15px;
     display: inline-block;

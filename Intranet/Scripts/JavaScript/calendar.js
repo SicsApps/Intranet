@@ -10,24 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lista com todos os feriados de 2025
     // Cada objeto tem: título, data e tipo (nacional ou municipal)
     const holidays = [
-        { title: 'Confraternizacao Universal', date: '2025-01-01', type: 'national' },
-        { title: 'Carnaval', date: '2025-03-03', type: 'national' },
-        { title: 'Carnaval', date: '2025-03-04', type: 'national' },
-        { title: 'Carnaval', date: '2025-03-05', type: 'national' },
-        { title: 'Sexta-feira da Paixao', date: '2025-04-18', type: 'municipal' },
-        { title: 'Tiradentes', date: '2025-04-21', type: 'national' },
-        { title: 'Dia do Trabalho', date: '2025-05-01', type: 'national' },
-        { title: 'Corpus Christi', date: '2025-06-19', type: 'municipal' },
-        { title: 'Nossa Senhora do Carmo', date: '2025-07-16', type: 'municipal' },
-        { title: 'Assuncao de Nossa Senhora', date: '2025-08-15', type: 'municipal' },
-        { title: 'Independencia do Brasil', date: '2025-09-07', type: 'national' },
-        { title: 'Nossa Senhora Aparecida', date: '2025-10-12', type: 'national' },
-        { title: 'Finados', date: '2025-11-02', type: 'national' },
-        { title: 'Proclamacao da Republica', date: '2025-11-15', type: 'national' },
-        { title: 'Dia da Consciencia Negra', date: '2025-11-20', type: 'national' },
-        { title: 'Imaculada Conceicao', date: '2025-12-08', type: 'municipal' },
-        { title: 'Natal', date: '2025-12-25', type: 'national' }
+
     ];
+
 
     // Cria o calendário usando a biblioteca FullCalendar
     const calendar = new FullCalendar.Calendar(calendarEl, {

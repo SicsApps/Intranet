@@ -1,94 +1,84 @@
-﻿    <div id="myModal" class="modal fade w-100 mx-auto" tabindex="-1" data-bs-backdrop="static">
-        <div class="modal-dialog  modal-dialog-centered mx-auto">
-            <div class="modal-content">
-                <div class="progress" style="height: 10px;">
-                    <div id="bp" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%;"></div>
-                </div>
-                <div class="modal-header">
-                    <h5 class="modal-title ns">Happy Hour - Encerramento da Soft</h5>
-                </div>
-                <div class="d-flex justify-content-center align-content-center">
-                    <img src="~/Content/img/aviso.jpg" class="img-fluid w-75" />
-                </div>
-                <div class="modal-footer fw-bold">
-                    <div id="mM">Você poderá fechar em</div>
-                    <div id="contRegress">3</div>
-                    <button id="btnM" type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+﻿@*<div id="myModal" class="modal fade mx-auto" tabindex="-1" data-bs-backdrop="static">
+            <div class="modal-dialog modal-xl modal-dialog-centered mx-auto">
+                <div class="modal-content">
+                    <div class="progress" style="height: 10px;">
+                        <div id="bp" class="progress-bar bg-info" role="progressbar" style="width: 0%;"></div>
+                    </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title ns">Boas Praticas - Email</h5>
+                    </div>
+                    <div class="justify-content-center align-content-center">
+                        <img src="~/Content/img/avisoMod.png" class="img-fluid" />
+                    </div>
+                    <div class="modal-footer fw-bold">
+                        <div id="mM">Você poderá fechar em</div>
+                        <div id="contRegress">3</div>
+                        <button id="btnM" type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-<script>
-    // modal aparece assim q a tela e carregada
-    document.addEventListener("DOMContentLoaded", function () {
-        const modal = new bootstrap.Modal(document.getElementById('myModal'))
-        modal.show();
-    });
+    <script>
+        // modal aparece assim q a tela e carregada
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = new bootstrap.Modal(document.getElementById('myModal'))
+            modal.show();
+        });
 
-    // close sumir e aparece
-    document.getElementById('btnM').style.display = 'none'
-    setTimeout(function () {
-        document.getElementById('btnM').style.display = 'inline'
-    }, 3000)
+        // close sumir e aparece
+        document.getElementById('btnM').style.display = 'none'
+        setTimeout(function () {
+            document.getElementById('btnM').style.display = 'inline'
+        }, 3000)
 
-    // close sumir e aparece
-    document.getElementById('mM').style.display = 'inline'
-    setTimeout(function () {
-        document.getElementById('mM').style.display = 'none'
-    }, 3000)
+        // close sumir e aparece
+        document.getElementById('mM').style.display = 'inline'
+        setTimeout(function () {
+            document.getElementById('mM').style.display = 'none'
+        }, 3000)
 
-    // segundos regressivo
-    contRegress = setInterval(function () {
-        const cronometro = document.getElementById('contRegress').innerHTML
-        const soma = parseInt(cronometro) - 1
-        if (soma === 0) {
-            document.getElementById('contRegress').innerHTML = "Você ja pode fechar"
-            pararContagem()
-        } else {
-            document.getElementById('contRegress').innerHTML = soma
+        // segundos regressivo
+        contRegress = setInterval(function () {
+            const cronometro = document.getElementById('contRegress').innerHTML
+            const soma = parseInt(cronometro) - 1
+            if (soma === 0) {
+                document.getElementById('contRegress').innerHTML = "Você ja pode fechar"
+                pararContagem()
+            } else {
+                document.getElementById('contRegress').innerHTML = soma
+            }
+        }, 1000)
+
+        function pararContagem() {
+            clearInterval(contRegress)
         }
-    }, 1000)
 
-    function pararContagem() {
-        clearInterval(contRegress)
-    }
+        // barra progresso
+        let barra = document.getElementById("bp")
+        let carga = 0
+        let intBarra = setInterval(function () {
+            barra.style.width = carga + "%"
+            carga++
+        }, 15)
+    </script>*@
 
-    // barra progresso
-    let barra = document.getElementById("bp")
-    let carga = 0
-    let intBarra = setInterval(function () {
-        barra.style.width = carga + "%"
-        carga++
-    }, 15)
-</script>
 @*HEADER*@
-<header @*id="home"*@>
-    <div class="container-fluid">
-        @*<div id="cta">
-            <h2 class="title">
-                Web<span>soft</span>
-            </h2>
-        </div>*@
-        @*<div id="banner" class="position-relative">*@
-            <img src="~/Content/img/Banner-Natal.c.png" alt="" class="img-fluid d-none d-md-block">
-            @*<a href="http://192.168.0.200/intranet/OutubroRosa/index.html" target="_blank"
-                   class="btn neon-pulse position-absolute bottom-0 end-0 m-4">
-                    Saiba Mais
-                </a>*@
-        </div>
-    @*</div>*@
+<header>
+    <div class="container">
+        <img src="~/Content/img/ground.png" alt="" class="img-fluid d-none d-sm-block">
+    </div>
 </header>
 
 @*MODAIS AVISOS BOLOTAS*@
-<section id="avisos">
-    <div class="container-fluid mb-5 pb-5 border border-2" style="background-color: darkgreen; border-color:white;">
+<section id="avisos" style="background-color:purple">
+    <div class="container-fluid my-5 pb-5" style="background:url(/Content/img/back.png)">
         <div class="py-5 fw-bolder text-center">
-            <h2 class="tt4 border border-2">
+            <h2 class="tt4">
                 Avisos
             </h2>
         </div>
-        <div class="text-center" style="background-color: darkgreen; color: white;">
+        <div class="text-center text-white">
             <div>
                 <strong>Todos Avisos</strong> importantes Aparecerão aqui
                 <strong>Compartilhe</strong> no ambiente de trabalho.
@@ -99,7 +89,7 @@
                 <div data-bs-toggle="modal" data-bs-target="#encomenda">
                     <div class="card-body-avisos text-center justify-content-center px-3 mx-5 mb-4 ">
                         <h5 class="card-title py-2 text-success">
-                            <i class="fa-solid fa-download px-1"></i>
+                            <i class="fa-solid fa-dolly px-1"></i>
                             Entregas pessoais
                         </h5>
                         <div class="card-text text-break">
@@ -147,7 +137,7 @@
 <div class="modal fade" id="encomenda" tabindex="-1" aria-labelledby="encomendaLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered mx-auto">
         <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:rgb(197,0,0); color:white;">
+            <div class="modal-header" style="background-color:slateblue; color:white;">
                 <h5 class="modal-title fw-bold" id="encomendaLabel">Entregas Pessoais</h5>
             </div>
             <div class="modal-body">
@@ -167,11 +157,11 @@
                     <li class="py-2"><strong>Limite:</strong> Volumes grandes não serão aceitos.</li>
                 </ul>
                 <div class="d-flex justify-content-center gap-2 mt-3">
-                    <button class="btn text-white" style="background-color:darkgreen;" data-bs-toggle="modal"
+                    <button class="btn btn-outline-success" data-bs-toggle="modal"
                             data-bs-target="#encomendaFull" data-bs-dismiss="modal">
                         Termo completo
                     </button>
-                    <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -181,7 +171,7 @@
 <div class="modal fade" id="encomendaFull" tabindex="-1" aria-labelledby="encomendaFullLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 100%;">
         <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:rgb(197,0,0); color:white;">
+            <div class="modal-header" style="background-color:slateblue; color:white;">
                 <h5 class="modal-title fw-bold" id="encomendaFullLabel">Termo Completo — Encomendas Pessoais</h5>
             </div>
             <div class="modal-body">
@@ -196,7 +186,7 @@
             </div>
 
             <div class="modal-footer bg-light border-top-0">
-                <button class="btn text-white" style="background-color:darkgreen;"
+                <button class="btn btn-outline-danger"
                         data-bs-dismiss="modal">
                     Fechar
                 </button>
@@ -209,7 +199,7 @@
 <div class="modal fade" id="emprestimo" tabindex="-1" aria-labelledby="emprestimoLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered mx-auto">
         <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:darkgreen; color:white;">
+            <div class="modal-header" style="background-color:slateblue; color:white;">
                 <h5 class="modal-title fw-bold" id="emprestimoLabel">Empréstimo Consignado</h5>
             </div>
             <div class="modal-body">
@@ -238,11 +228,11 @@
                     </li>
                 </ul>
                 <div class="d-flex justify-content-center gap-2 mt-3">
-                    <button class="btn text-white" style="background-color:rgb(197,0,0);" data-bs-toggle="modal"
+                    <button class="btn btn-outline-success" data-bs-toggle="modal"
                             data-bs-target="#emprestimoFull" data-bs-dismiss="modal">
                         Termo completo
                     </button>
-                    <button class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+                    <button class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -252,7 +242,7 @@
 <div class="modal fade" id="emprestimoFull" tabindex="-1" aria-labelledby="emprestimoFullLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 100%;">
         <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:darkgreen; color:white;">
+            <div class="modal-header" style="background-color:slateblue; color:white;">
                 <h5 class="modal-title fw-bold" id="emprestimoFullLabel">Termo Empréstimo Consignado</h5>
             </div>
             <div class="modal-body">
@@ -269,7 +259,7 @@
                 </div>
             </div>
             <div class="modal-footer bg-light border-top-0">
-                <button class="btn text-white" style="background-color:rgb(197,0,0);"
+                <button class="btn btn-outline-danger"
                         data-bs-dismiss="modal">
                     Fechar
                 </button>
@@ -281,74 +271,98 @@
 @*ANIVERSARIANTES*@
 <section id="aniversariantes" class="reveal">
     <div class="py-5 fw-bolder text-center">
-        <h2 class="tt border border-2">
+        <h2 class="tt">
             Aniversariantes
         </h2>
     </div>
-    <div class="container table-responsive rounded-2 bg-white w-75 border border-2">
+    <div class="container table-responsive rounded-3 bg-white w-75">
         <table id="niver" class="table table-striped table-hover display">
-            <thead style="background-color: darkgreen; color: white;" ead>
+            <thead style="background-color: slateblue; color: white;" ead>
                 <tr>
-                    <th style="background-color: darkgreen; color: white;">Nome</th>
-                    <th style="background-color: darkgreen; color: white;">Data</th>
-                    <th style="background-color: darkgreen; color: white;">Departamento</th>
+                    <th style="background-color: slateblue; color: white;">Nome</th>
+                    <th style="background-color: slateblue; color: white;">Data</th>
+                    <th style="background-color: slateblue; color: white;">Departamento</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Vitoria Morais</td>
-                    <td>10/12/2025</td>
+                    <td>Andreia Gonçalves</td>
+                    <td>03/01/2026</td>
                     <td>Produção</td>
                 </tr>
                 <tr>
-                    <td>Joyce Eduarda</td>
-                    <td>19/12/2025</td>
+                    <td>Dilma Mendes</td>
+                    <td>06/01/2026</td>
                     <td>Produção</td>
                 </tr>
                 <tr>
-                    <td>Ranielly Cristina</td>
-                    <td>20/12/2025</td>
+                    <td>Italo de Oliveira</td>
+                    <td>08/01/2026</td>
                     <td>Produção</td>
                 </tr>
                 <tr>
-                    <td>Paula Mendes</td>
-                    <td>02/12/2025</td>
+                    <td>Josiane Teixeira</td>
+                    <td>02/12/2026</td>
+                    <td>Produção</td>
+                </tr>
+                <tr>
+                    <td>Diego Augusto</td>
+                    <td>20/01/2026</td>
+                    <td>Produção</td>
+                </tr>
+                <tr>
+                    <td>Ione Cândida</td>
+                    <td>30/01/2026</td>
+                    <td>Produção</td>
+                </tr>
+                <tr>
+                    <td>Andreza Mendes</td>
+                    <td>10/01/2026</td>
                     <td>Administrativo</td>
                 </tr>
                 <tr>
-                    <td>Victor Cesar</td>
-                    <td>06/12/2025</td>
+                    <td>Nycolle Vieira</td>
+                    <td>19/01/2026</td>
                     <td>Administrativo</td>
                 </tr>
                 <tr>
-                    <td>Luiz Guilherme</td>
-                    <td>16/12/2025</td>
+                    <td>Ariely Lourdes</td>
+                    <td>27/01/2026</td>
                     <td>Administrativo</td>
                 </tr>
                 <tr>
-                    <td>camille de Cassia</td>
-                    <td>14/12/2025</td>
-                    <td>e-commerce</td>
+                    <td>Clayton Gama</td>
+                    <td>07/01/2026</td>
+                    <td>Aplique/CD</td>
                 </tr>
-                
+                <tr>
+                    <td>Kaique Luan</td>
+                    <td>15/01/2026</td>
+                    <td>Vitrine/CD</td>
+                </tr>
+                <tr>
+                    <td>Gabriel Santos</td>
+                    <td>17/01/2026</td>
+                    <td>Vitrine/CD</td>
+                </tr>
             </tbody>
         </table>
     </div>
 </section>
 
 @*CALENDARIO*@
-<section id="calendario" class="reveal">
-    <div class="container-fluid my-5 pb-5 border border-2" style="background-color: rgb(89,0,0); color: black;">
+<section id="calendario" class="reveal" style="background-color:mediumpurple">
+    <div class="container-fluid my-5 pb-5" style="background:url(/Content/img/back.png) ">
         <div class="fw-bolder text-center py-5">
-            <h2 class="tt3 border border-2">Calendário</h2>
+            <h2 class="tt3">Calendário</h2>
         </div>
-        <div class="container rounded-2 bg-white w-75 text-center">
+        <div class="container rounded-5 bg-white w-75 text-center">
             <div class="row">
                 <div class="col-lg-6">
                     <div id="calendar" class="p-3"></div>
                 </div>
                 <div class="col-lg-6 p-3">
-                    <h5 class="tt2 card-title mb-5 text-white">Datas Comemorativas</h5>
+                    <h5 class="tt card-title mb-5 text-white">Datas Comemorativas</h5>
                     <ul id="holiday-legend" class="list-unstyled text-start card-body"></ul>
                 </div>
             </div>
@@ -359,16 +373,16 @@
 @*GINASTICA*@
 <section id="ginastica" class="reveal">
     <div class="py-5 fw-bolder text-center">
-        <h2 class="tt2 border border-2">
+        <h2 class="tt2">
             Ginastica
         </h2>
     </div>
-    <div class="container table-responsive rounded-2 bg-white w-75 border border-2">
+    <div class="container table-responsive rounded-3 bg-white w-75">
         <table id="gym" class="table table-striped table-hover display">
-            <thead style="background-color: darkgreen; color: white;" ead>
+            <thead style="background-color: slateblue; color: white;" ead>
                 <tr>
-                    <th style="background-color:rgb(89,0,0); color: white;">Data</th>
-                    <th style="background-color:rgb(89,0,0); color: white;">Nome</th>
+                    <th style="background-color:purple; color: white;">Data</th>
+                    <th style="background-color:purple; color: white;">Nome</th>
                 </tr>
             </thead>
             <tbody>
@@ -510,22 +524,22 @@
 </section>
 
 @*INSTITUCIONAL*@
-<section id="regras" class="reveal">
-    <div class="container-fluid my-5 pb-5 border border-2" style="background-color: darkgreen; color: white;">
+<section id="regras" class="reveal" style="background-color:purple">
+    <div class="container-fluid text-white my-5" style="background:url(/Content/img/back.png); padding-bottom:75px;">
         <div class="py-5 fw-bolder text-center">
-            <h2 class="tt4 border border-2">
+            <h2 class="tt4">
                 Institucional
             </h2>
         </div>
-        <div class="col-12">
-            <div class="text-center mb-5">
-                <strong>Respeite as diferenças</strong> e colabore para a boa
-                <strong>convivência e harmonia</strong> no ambiente de trabalho.
-            </div>
-        </div>
-        <div class="container">
+        
+        <div class="container py-5 rounded-5" style="background-color:rgba(50,50,50,0.6)"><div class="col-12">
+    <div class="text-center mb-5">
+        <strong>Respeite as diferenças</strong> e colabore para a boa
+        <strong>convivência e harmonia</strong> no ambiente de trabalho.
+    </div>
+</div>
             <div class="row g-5">
-                <div class="col-sm-4">
+                <div class="col-md-6 col-lg-4">
                     <h5 class="text-center">
                         TOM DE VOZ
                     </h5>
@@ -534,7 +548,7 @@
                         <strong>Tenha atenção</strong> para não atrapalhar pessoas que estiverem ao seu lado.
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6 col-lg-4">
                     <h5 class="text-center">
                         SEJA ECOLÓGICO
                     </h5>
@@ -544,7 +558,7 @@
                         <strong>Reduza, Reutilize e Recicle.</strong>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6 col-lg-4">
                     <h5 class="text-center">
                         AMBIENTE LOCAL
                     </h5>
@@ -553,7 +567,7 @@
                         Um espaço organizado aumenta a, <strong>produtividade e o bem-estar</strong> diario.
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6 col-lg-4">
                     <h5 class="text-center">
                         RECADOS DO SETOR
                     </h5>
@@ -563,7 +577,7 @@
                         assim que possível.
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6 col-lg-4">
                     <h5 class="text-center">
                         LOCAL DE TRABALHO
                     </h5>
@@ -572,13 +586,13 @@
                         <strong>Não comente</strong> fofocas e <strong>não crie</strong> ou espalhe boatos no Ambiente de trabalho.
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6 col-lg-4">
                     <h5 class="text-center">
                         ENTRE RAMAIS
                     </h5>
                     <hr />
                     <div class="text-center">
-                        Não insista em uma ligação caso o ramal esteja ocupado, <strong>tente maistarde.</strong>
+                        Não insista em uma ligação caso o ramal esteja ocupado, <strong>tente mais tarde.</strong>
                     </div>
                 </div>
             </div>
@@ -590,25 +604,25 @@
 @*ESCALA DO ALMOCO*@
 <section id="horario" class="reveal">
     <div class="py-5 text-center">
-        <h2 class="tt border border-2">
+        <h2 class="tt">
             Horario de Almoço
         </h2>
     </div>
-    <div class="container table-responsive rounded-2 bg-white w-75 border border-2">
+    <div class="container table-responsive rounded-3 bg-white w-75">
         <div class="pt-3">
             <table class="hours table table-striped table-hover display">
-                <thead style="background-color: darkgreen; color: white;" ead>
+                <thead style="background-color: slateblue; color: white;" ead>
                     <tr>
-                        <th style="background-color: darkgreen; color: white;" colspan="5" class="text-center">
+                        <th style="background-color: slateblue; color: white;" colspan="5" class="text-center">
                             COZINHA
                         </th>
                     </tr>
                     <tr>
-                        <th style="background-color: darkgreen; color: white;">11h30min</th>
-                        <th style="background-color: darkgreen; color: white;">12h00min</th>
-                        <th style="background-color: darkgreen; color: white;">12h30min</th>
-                        <th style="background-color: darkgreen; color: white;">13h00min</th>
-                        <th style="background-color: darkgreen; color: white;">13h30min</th>
+                        <th style="background-color: slateblue; color: white;">11h30min</th>
+                        <th style="background-color: slateblue; color: white;">12h00min</th>
+                        <th style="background-color: slateblue; color: white;">12h30min</th>
+                        <th style="background-color: slateblue; color: white;">13h00min</th>
+                        <th style="background-color: slateblue; color: white;">13h30min</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -652,18 +666,18 @@
         </div>
         <div class="pt-5">
             <table class="hours table table-striped table-hover py-5 display">
-                <thead style="background-color: darkgreen; color: white;" ead>
+                <thead style="background-color: slateblue; color: white;" ead>
                     <tr>
-                        <th style="background-color: darkgreen; color: white;" colspan="5" class="text-center">
+                        <th style="background-color: slateblue; color: white;" colspan="5" class="text-center">
                             REFEITÓRIO 1º PISO
                         </th>
                     </tr>
                     <tr>
-                        <th style="background-color: darkgreen; color: white;">12h00</th>
-                        <th style="background-color: darkgreen; color: white;">12h30</th>
-                        <th style="background-color: darkgreen; color: white;">13h00min</th>
-                        <th style="background-color: darkgreen; color: white;">13h15min</th>
-                        <th style="background-color: darkgreen; color: white;">13h30min</th>
+                        <th style="background-color: slateblue; color: white;">12h00</th>
+                        <th style="background-color: slateblue; color: white;">12h30</th>
+                        <th style="background-color: slateblue; color: white;">13h00min</th>
+                        <th style="background-color: slateblue; color: white;">13h15min</th>
+                        <th style="background-color: slateblue; color: white;">13h30min</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -709,27 +723,29 @@
 </section>
 
 @*LANCAMENTOS*@
-<section id="lancamentos" class="reveal">
-    <div class="container-fluid my-5 pb-5 border border-2" style="background-color:rgb(89,0,0);">
+<section id="lancamentos" class="reveal" style="background-color:mediumpurple">
+    <div class="container-fluid my-5 pb-5" style="background:url(/Content/img/back.png)">
         <div class="pt-5 fw-bolder text-center">
-            <h2 class="tt3 border border-2">Lançamentos</h2>
+            <h2 class="tt3">Lançamentos</h2>
         </div>
-        <div class="row pt-5">
-            <div class="col-md-6 d-block text-center align-content-end">
-                <img src="~/Content/img/Lisa Pé Esfoliante.png" class="img-fluid efeito-lan" alt="" style="max-width:30%;">
-                <div class="card-body py-3">
-                    <h5 class="card-title text-center tt4" style="color:rgb(89,0,0);">Lisa Pé</h5>
-                    <!-- <a href="https://loja.softhair.com.br/" target="_blank"
+        <div class="container pb-5 rounded-5" style="background-color:rgba(160,100,160,0.6)">
+            <div class="row mt-5 pt-4">
+                <div class="col-md-6 d-block text-center align-content-end">
+                    <img src="~/Content/img/Lisa Pé Esfoliante.png" class="img-fluid efeito-lan" alt="" style="max-width:30%;">
+                    <div class="card-body py-3">
+                        <h5 class="card-title text-center tt4" style="color:purple;">Lisa Pé</h5>
+                        <!-- <a href="https://loja.softhair.com.br/" target="_blank"
                         class="btn btn-light rounded-pill mt-auto">Veja Mais</a> -->
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 d-block text-center align-content-end">
-                <img src="~/Content/img/Clareador Rosa Mosqueta 110g.png" class="img-fluid efeito-lan" alt="" style="max-width:50%;">
-                <div class="card-body py-3">
-                    <h5 class="card-title text-center tt4" style="color:rgb(89,0,0);">Lisa Clareador</h5>
-                    <!-- <a href="https://loja.softhair.com.br/sabonete-liquido-tira-manchas-soft-hair"
+                <div class="col-md-6 d-block text-center align-content-end">
+                    <img src="~/Content/img/Clareador Rosa Mosqueta 110g.png" class="img-fluid efeito-lan" alt="" style="max-width:50%;">
+                    <div class="card-body py-3">
+                        <h5 class="card-title text-center tt4" style="color:purple;">Lisa Clareador</h5>
+                        <!-- <a href="https://loja.softhair.com.br/sabonete-liquido-tira-manchas-soft-hair"
                         target="_blank" class="btn btn-light rounded-pill mt-auto">Veja Mais</a> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -740,19 +756,19 @@
 @*RAMAIS*@
 <section id="ramais" class="reveal">
     <div class="py-5 fw-bolder text-center">
-        <h2 class="tt2 border border-2">
+        <h2 class="tt2">
             Ramais
         </h2>
     </div>
 
-    <div class="container table-responsive rounded-2 bg-white w-75 border border-2">
+    <div class="container table-responsive rounded-3 bg-white w-75">
         <table id="ramal" class="table table-striped table-hover display">
             <thead>
                 <tr>
-                    <th style="background-color:rgb(89,0,0); color: white;">Nome</th>
-                    <th style="background-color:rgb(89,0,0); color: white;">Ramal</th>
-                    <th style="background-color:rgb(89,0,0); color: white;">Email</th>
-                    <th style="background-color:rgb(89,0,0); color: white;">Departamento</th>
+                    <th style="background-color:purple; color: white;">Nome</th>
+                    <th style="background-color:purple; color: white;">Ramal</th>
+                    <th style="background-color:purple; color: white;">Email</th>
+                    <th style="background-color:purple; color: white;">Departamento</th>
                 </tr>
             </thead>
             <tbody>
@@ -1110,25 +1126,21 @@
 </section>
 
 @*REGRAS RAMAIS*@
-<section id="rgramais" class="reveal">
-    <div class="container-fluid my-5 g-5 border border-2" style="background-color: darkgreen; color: white;">
+<section id="rgramais" class="reveal" style="background-color:purple">
+    <div class="container-fluid text-white my-5 pb-5" style="background:url(/Content/img/back.png); padding-bottom:75px">
         <div class="py-5 fw-bolder text-center d-block align-content-center justify-content-center">
-            <h2 class="tt4 border border-2">
+            <h2 class="tt4">
                 Regras do Telefone
             </h2>
         </div>
-
-        <div class="text-center">
-            <div>
-                Siga estas <strong>instruções</strong> para usar corretamente o <strong>
-                    sistema telefônico
-                    interno
-                </strong>
-            </div>
-        </div>
-        <div class="container py-5">
+        
+        <div class="container  py-5 rounded-5" style="background-color:rgba(50,50,50,0.6)"><div class="text-center mb-5">
+    Siga estas <strong>instruções</strong> para usar corretamente o <strong>
+        sistema telefônico
+        interno
+    </strong>
+</div>
             <div class="row g-5">
-
                 <div class="col-sm-4">
                     <h5 class="text-center">TRANSFERIR LIGAÇÕES</h5>
                     <hr>
@@ -1137,7 +1149,6 @@
                         Para Transferir Ligações.
                     </div>
                 </div>
-
                 <div class="col-sm-4">
                     <h5 class="text-center">INTERURBANAS FIXO</h5>
                     <hr>
@@ -1146,7 +1157,6 @@
                         Não use código de operadora.
                     </div>
                 </div>
-
                 <div class="col-sm-4">
                     <h5 class="text-center">INTERURBANAS CELULAR</h5>
                     <hr>
@@ -1155,9 +1165,7 @@
                         Utilize a operadora <strong>Claro</strong>.
                     </div>
                 </div>
-
             </div>
         </div>
-
     </div>
 </section>
