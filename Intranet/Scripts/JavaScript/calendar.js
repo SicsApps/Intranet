@@ -1,60 +1,68 @@
-// Espera até que todo o conteúdo da página (HTML) seja carregado
+// Espera ate que todo o conteudo da pagina (HTML) seja carregado
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Pega o elemento onde o calendário vai ser exibido
+    // Pega o elemento onde o calendario vai ser exibido
     const calendarEl = document.getElementById('calendar');
 
     // Pega o elemento onde vai aparecer a legenda dos feriados
     const legendEl = document.getElementById('holiday-legend');
 
-    // Lista com todos os feriados de 2025
-    // Cada objeto tem: título, data e tipo (nacional ou municipal)
+    // Lista com todos os feriados de 2026 (FIEMG / MG)
+    // Cada objeto tem: titulo, data e tipo (nacional ou municipal)
     const holidays = [
-
+        { title: 'Confraternizacao Universal', date: '2026-01-01', type: 'nacional' },
+        { title: 'Carnaval (Segunda)', date: '2026-02-16', type: 'nacional' },
+        { title: 'Carnaval (Terca)', date: '2026-02-17', type: 'nacional' },
+        { title: 'Quarta-feira de Cinzas', date: '2026-02-18', type: 'nacional' },
+        { title: 'Sexta-feira Santa', date: '2026-04-03', type: 'nacional' },
+        { title: 'Tiradentes', date: '2026-04-21', type: 'nacional' },
+        { title: 'Dia do Trabalho', date: '2026-05-01', type: 'nacional' },
+        { title: 'Corpus Christi', date: '2026-06-04', type: 'nacional' },
+        { title: 'Independencia do Brasil', date: '2026-09-07', type: 'nacional' },
+        { title: 'Nossa Senhora Aparecida', date: '2026-10-12', type: 'nacional' },
+        { title: 'Finados', date: '2026-11-02', type: 'nacional' },
+        { title: 'Proclamacao da Republica', date: '2026-11-15', type: 'nacional' },
+        { title: 'Dia da Consciencia Negra', date: '2026-11-20', type: 'nacional' },
+        { title: 'Natal', date: '2026-12-25', type: 'nacional' },
+        { title: 'Assuncao de Nossa Senhora', date: '2026-08-15', type: 'municipal' },
+        { title: 'Imaculada Conceicao', date: '2026-12-08', type: 'municipal' }
     ];
 
-
-    // Cria o calendário usando a biblioteca FullCalendar
+    // Cria o calendario usando a biblioteca FullCalendar
     const calendar = new FullCalendar.Calendar(calendarEl, {
-        // Define o idioma como português do Brasil
+        // Define o idioma como portugues do Brasil
         locale: 'pt-br',
 
-        // Define o tipo de visualização inicial (mês em grade)
+        // Define o tipo de visualizacao inicial
         initialView: 'dayGridMonth',
 
-        // Tradução do botão "today" para "Hoje"
+        // Traducao do botao "today"
         buttonText: { today: 'Hoje' },
 
-        // Adiciona os feriados como eventos no calendário
+        // Adiciona os feriados como eventos
         events: holidays.map(h => ({
-            title: h.title,  // Nome do feriado
-            start: h.date,   // Data
-            className: h.type // Classe CSS (pode ser usada pra estilizar nacional x municipal)
+            title: h.title,
+            start: h.date,
+            className: h.type
         })),
 
-        // Toda vez que o usuário muda de mês, chama a função updateLegend()
-        // pra atualizar a lista de feriados daquele mês
+        // Atualiza a legenda ao trocar de mes
         datesSet: ({ view }) => updateLegend(view.currentStart)
     });
 
-    // Renderiza o calendário na tela
+    // Renderiza o calendario
     calendar.render();
 
-    // Função que atualiza a legenda (lista de feriados do mês atual)
+    // Atualiza a legenda
     function updateLegend(currentDate) {
-        // Pega o mês e o ano atuais do calendário
-        const month = currentDate.getMonth() + 1; // +1 porque os meses vão de 0 a 11
+        const month = currentDate.getMonth() + 1;
         const year = currentDate.getFullYear();
 
-        // Filtra apenas os feriados que pertencem ao mês e ano atuais
         const currentHolidays = holidays.filter(h => {
             const [y, m] = h.date.split('-').map(Number);
             return y === year && m === month;
         });
 
-        // Monta o HTML da lista de feriados
-        // Se houver feriados, lista cada um com data formatada
-        // Caso contrário, mostra "Sem feriados neste mês"
         legendEl.innerHTML = currentHolidays.length
             ? currentHolidays.map(h => {
                 const [y, m, d] = h.date.split('-');
@@ -63,6 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
             : '<li>Sem feriados neste mes</li>';
     }
 
-    // Atualiza a legenda logo que o calendário é carregado (mês atual)
+    // Atualiza a legenda ao carregar
     updateLegend(new Date());
 });
