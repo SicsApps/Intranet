@@ -1,19 +1,23 @@
-﻿@*<div id="myModal" class="modal fade mx-auto" tabindex="-1" data-bs-backdrop="static">
-            <div class="modal-dialog modal-xl modal-dialog-centered mx-auto">
+﻿        <div id="myModal" class="modal fade mx-auto" tabindex="-1" data-bs-backdrop="static">
+            <div class="modal-dialog modal-xl modal-dialog-centered d-flex mx-auto">
                 <div class="modal-content">
-                    <div class="progress" style="height: 10px;">
-                        <div id="bp" class="progress-bar bg-info" role="progressbar" style="width: 0%;"></div>
-                    </div>
+                    @*<div class="progress" style="height: 10px;">
+            <div id="bp" class="progress-bar bg-info" role="progressbar" style="width: 0%;"></div>
+        </div>*@
                     <div class="modal-header">
-                        <h5 class="modal-title ns">Boas Praticas - Email</h5>
+                        <h5 class="fw-bolder">WIFI GRATIS</h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Rede Wi-Fi SoftFree criada e disponível para colaboradores no horário de almoço <strong>(11h30 às 14h, de segunda a sexta</strong></p>
                     </div>
                     <div class="justify-content-center align-content-center">
-                        <img src="~/Content/img/avisoMod.png" class="img-fluid" />
+                        <img src="~/Content/img/SENHA softfree.png" class="img-fluid" />
                     </div>
                     <div class="modal-footer fw-bold">
-                        <div id="mM">Você poderá fechar em</div>
-                        <div id="contRegress">3</div>
-                        <button id="btnM" type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        @*<div id="mM">Você poderá fechar em</div>
+            <div id="contRegress">3</div>*@
+                        <button id="btnM" type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
                     </div>
                 </div>
             </div>
@@ -26,42 +30,42 @@
             modal.show();
         });
 
-        // close sumir e aparece
-        document.getElementById('btnM').style.display = 'none'
-        setTimeout(function () {
-            document.getElementById('btnM').style.display = 'inline'
-        }, 3000)
+        //// close sumir e aparece
+        //document.getElementById('btnM').style.display = 'none'
+        //setTimeout(function () {
+        //    document.getElementById('btnM').style.display = 'inline'
+        //}, 3000)
 
-        // close sumir e aparece
-        document.getElementById('mM').style.display = 'inline'
-        setTimeout(function () {
-            document.getElementById('mM').style.display = 'none'
-        }, 3000)
+        //// close sumir e aparece
+        //document.getElementById('mM').style.display = 'inline'
+        //setTimeout(function () {
+        //    document.getElementById('mM').style.display = 'none'
+        //}, 3000)
 
-        // segundos regressivo
-        contRegress = setInterval(function () {
-            const cronometro = document.getElementById('contRegress').innerHTML
-            const soma = parseInt(cronometro) - 1
-            if (soma === 0) {
-                document.getElementById('contRegress').innerHTML = "Você ja pode fechar"
-                pararContagem()
-            } else {
-                document.getElementById('contRegress').innerHTML = soma
-            }
-        }, 1000)
+        //// segundos regressivo
+        //contRegress = setInterval(function () {
+        //    const cronometro = document.getElementById('contRegress').innerHTML
+        //    const soma = parseInt(cronometro) - 1
+        //    if (soma === 0) {
+        //        document.getElementById('contRegress').innerHTML = "Você ja pode fechar"
+        //        pararContagem()
+        //    } else {
+        //        document.getElementById('contRegress').innerHTML = soma
+        //    }
+        //}, 1000)
 
-        function pararContagem() {
-            clearInterval(contRegress)
-        }
+        //function pararContagem() {
+        //    clearInterval(contRegress)
+        //}
 
-        // barra progresso
-        let barra = document.getElementById("bp")
-        let carga = 0
-        let intBarra = setInterval(function () {
-            barra.style.width = carga + "%"
-            carga++
-        }, 15)
-    </script>*@
+        //// barra progresso
+        //let barra = document.getElementById("bp")
+        //let carga = 0
+        //let intBarra = setInterval(function () {
+        //    barra.style.width = carga + "%"
+        //    carga++
+        //}, 15)
+    </script>
 
 @*HEADER*@
 <header>
