@@ -78,7 +78,6 @@ new DataTable('#ramal', {
     paging: false,
     info: false,
     scrollY: '800px',
-    paging: false,
     language: {
         url: "https://cdn.datatables.net/plug-ins/2.3.4/i18n/pt-BR.json",
     }

@@ -29,41 +29,13 @@
 
 
     @*NAVBAR*@
-    <nav class="small navbar navbar-expand-lg navbar-dark bg-dark custom_nav-container w-100 fw-medium text-uppercase">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom_nav-container w-100 fw-medium text-uppercase">
         <div class="container-fluid">
 
             <!-- Logo -->
             <a class="navbar-brand" href="#home">
                 <img class="rounded-1" src="~/Content/img/softHairBranca.png" alt="Logo soft">
             </a>
-
-            <div id="mySics" class="toast position-fixed bottom-0 end-0 m-3"
-                 role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-
-                <div class="toast-header">
-                    <img src="http://192.168.0.200/sics/Content/images/SICS%20ICELAND.png"
-                         class="me-auto" alt="SICS" style="width:100px;">
-                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-                </div>
-
-                <div class="toast-body bg-black">
-                    <a class="btn btn-outline-light btn-lg p-3 w-100" href="http://192.168.0.200/sics/" target="_blank">
-                        Acessar SICS
-                    </a>
-                </div>
-            </div>
-
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const toastEl = document.getElementById('mySics');
-                    const toast = new bootstrap.Toast(toastEl
-                    );
-                    toast.show();
-                });
-            </script>
-
-
-
             <!-- Botão mobile -->
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse"
@@ -115,23 +87,24 @@
                         <a class="nav-link" href="#lancamentos">Lançamentos</a>
                     </li>
 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"
+                           id="instDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Sistemas
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="instDropdown">
+                            <li><a class="dropdown-item" href="http://192.168.0.200/relatorios/">Relatorios</a></li>
+                            <li><a class="dropdown-item" href="http://192.168.0.200/sics/AgendamentoReuniao/" target="_blank">Agendamentos</a></li>
+                            <li><a class="dropdown-item" href="http://192.168.0.200/sics/">SICS</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#ramais">Ramais</a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://192.168.0.200/relatorios/">Relatorios</a>
-                    </li>
-
-                    <!-- Agendamentos -->
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="http://192.168.0.200/sics/AgendamentoReuniao/"
-                           target="_blank">
-                            Agendamentos
-                        </a>
-                    </li>
-
                 </ul>
             </div>
         </div>

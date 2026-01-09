@@ -6,8 +6,6 @@
 
 /* Lista de datas comemorativas */
 #holiday-legend li {
-    background: #f8f8ff !important;
-    color: black;
     margin-bottom: 12px;
     padding: 12px 16px;
     border-left: 5px solid mediumpurple;
@@ -29,7 +27,7 @@
 }
 
     /* Estilos para feriados nacionais*/
-    .fc-event.national {
+    .fc-event.nacional {
         background-color: mediumpurple;
     }
 
