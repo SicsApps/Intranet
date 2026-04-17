@@ -7,6 +7,8 @@ namespace Intranet.Controllers
 
         public ActionResult Novidades()
         {
+            //PROCESSA
+
             return View();
         }
         public ActionResult Index()

@@ -65,7 +65,7 @@ $(document).ready(function () {
         let dataGym = $('td', this).eq(0).text().trim();
         let [diaGym, mesGym] = dataGym.split('/').map(Number);
 
-        if (mesGym === mes && diaGym >= dia) {
+        if (diaGym >= dia) {
             $(this).show();
         } else {
             $(this).hide();
