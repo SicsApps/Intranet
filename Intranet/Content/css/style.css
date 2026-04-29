@@ -137,3 +137,8 @@ section {
     padding: 5px 15px;
     display: inline-block;
 }
+
+/* CARROSSEL BOTÕES */
+.carousel-indicators .active {
+    background-color: purple;
+}
