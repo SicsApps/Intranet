@@ -183,6 +183,7 @@
     <Content Include="Content\img\Esfoliantes 150g.png" />
     <Content Include="Content\img\Esfoliantes Clareador.png" />
     <Content Include="Content\img\Gelatina Maracujá.png" />
+    <Content Include="Content\img\icone_40_anos.png" />
     <Content Include="Content\img\IntraJanBranco.png" />
     <Content Include="Content\img\Intranet %28002%29.png" />
     <Content Include="Content\img\Lisa Pé Esfoliante.png" />
@@ -191,6 +192,7 @@
     <Content Include="Content\img\SENHA softfree.png" />
     <Content Include="Content\img\softHairBranca.png" />
     <Content Include="Content\img\Spray Clareador.png" />
+    <Content Include="Content\img\Walpaper_40_anos.png" />
     <Content Include="Scripts\JavaScript\calendar.js" />
     <Content Include="Scripts\JavaScript\datables.js" />
     <Content Include="Scripts\JavaScript\script.js" />
