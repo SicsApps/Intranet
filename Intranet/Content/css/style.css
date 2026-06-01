@@ -107,7 +107,7 @@ section {
 
 /* TITULOS */
 .tt {
-    background-color: slateblue;
+    background-color: darkblue;
     color: white;
     border-radius: 15px 0;
     padding: 5px 15px;
@@ -141,4 +141,31 @@ section {
 /* CARROSSEL BOTÕES */
 .carousel-indicators .active {
     background-color: purple;
+}
+
+/* CONTADOR COPA DO MUNDO */
+.contador-copa {
+    font-size: 10px;
+    background: #006847;
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 10px;
+    transform: scale(0.7)
+}
+
+#contador span {
+    color: #FFDF00;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar-copa img {
+    max-width: 500px;
+    width: auto;
+    height: auto;
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: bold;
 }
