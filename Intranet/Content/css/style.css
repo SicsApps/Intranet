@@ -145,17 +145,17 @@ section {
 
 /* CONTADOR COPA DO MUNDO */
 .contador-copa {
-    font-size: 10px;
+    font-size: 12px;
     background: #006847;
     color: #fff;
     padding: 5px 25px;
     border-radius: 10px;
-    transform: scale(0.7)
+        /*transform: scale(0.7)*/
 }
 
 #contador span {
     color: #FFDF00;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
