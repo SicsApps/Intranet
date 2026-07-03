@@ -113,10 +113,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AgendamentoReuniaoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PerguntaProdutosController.cs" />
     <Compile Include="Entities\AgendamentoReuniao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\PerguntaProdutosRequest.cs" />
+    <Compile Include="Models\PerguntaProdutosRespostaViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +157,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\css\bg.css" />
     <Content Include="Content\css\calendar.css" />
+    <Content Include="Content\css\pergunta-produtos.css" />
     <Content Include="Content\css\style.css" />
     <Content Include="Content\destaque-733.jpg" />
     <Content Include="Content\fullcalendar.css" />
@@ -197,6 +201,7 @@
     <Content Include="Content\img\Walpaper_40_anos.png" />
     <Content Include="Scripts\JavaScript\calendar.js" />
     <Content Include="Scripts\JavaScript\datables.js" />
+    <Content Include="Scripts\JavaScript\pergunta-produtos.js" />
     <Content Include="Scripts\JavaScript\script.js" />
     <Content Include="Content\Logo\LogoRoxa.png" />
     <Content Include="Content\Produtos\000000017638.png" />
@@ -341,13 +346,14 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\PerguntaProdutos\Index.cshtml" />
     <Content Include="Scripts\moment.min.js.map" />
     <Content Include="Scripts\moment-with-locales.min.js.map" />
     <Content Include="Views\AgendamentoReuniao\Index.cshtml" />
+    <Content Include="Views\PerguntaProdutos\_Resposta.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

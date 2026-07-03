@@ -1,0 +1,93 @@
+@{
+    ViewBag.Title = "Perguntas sobre produtos";
+}
+
+<link rel="stylesheet" href="~/Content/css/pergunta-produtos.css" />
+
+<main class="pergunta-produtos-page">
+    <div class="container pergunta-produtos-container">
+        <section class="pergunta-produtos-card" aria-labelledby="titulo-pergunta-produtos">
+            <div class="pergunta-produtos-header text-center">
+                <span class="pergunta-produtos-icon" aria-hidden="true">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </span>
+                <h1 id="titulo-pergunta-produtos">SOFT IA</h1>
+                <p class="text-center text-danger">
+                    Olá! Eu sou o seu novo Assistente de Produtos Soft.
+
+                    Fui desenvolvido para ajudar você a encontrar rapidamente as informações sobre toda a nossa linha de produtos. 
+                </p>
+
+                <p class="mt-3">
+                    Posso responder perguntas sobre benefícios, características, modo de uso, indicações, diferenciais, sugerir os produtos mais adequados para cada necessidade, comparar itens da linha e esclarecer dúvidas gerais.
+                    Basta fazer sua pergunta em linguagem natural, como se estivesse conversando com uma pessoa.
+                </p>
+            </div>
+
+            <form id="form-pergunta-produtos"
+                  action="@Url.Action("Perguntar", "PerguntaProdutos")"
+                  method="post"
+                  novalidate>
+                @Html.AntiForgeryToken()
+
+                <div class="mb-3">
+                    <label for="pergunta-produtos" class="form-label fw-bold">Sua pergunta</label>
+                    <textarea id="pergunta-produtos"
+                              name="Pergunta"
+                              class="form-control pergunta-produtos-textarea"
+                              rows="6"
+                              maxlength="2000"
+                              placeholder="Como posso te ajudar hoje?"
+                             
+                              aria-describedby="ajuda-pergunta-produtos"
+                              required></textarea>
+                    <div id="ajuda-pergunta-produtos" class="d-flex justify-content-between mt-2">
+                        <small class="text-muted">Informe o produto e detalhe sua dúvida.</small>
+                        <small class="text-muted"><span id="contador-pergunta-produtos">0</span>/2000</small>
+                    </div>
+                </div>
+
+                <div id="erro-pergunta-produtos"
+                     class="alert alert-danger d-none"
+                     role="alert"
+                     aria-live="assertive"></div>
+
+                <button id="botao-pergunta-produtos" type="submit" class="btn btn-pergunta-produtos">
+                    <span class="texto-botao">
+                        <i class="fa-solid fa-paper-plane me-2" aria-hidden="true"></i>Perguntar
+                    </span>
+                    <span class="carregando-botao d-none">
+                        <span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+                        Consultando...
+                    </span>
+                </button>
+            </form>
+
+            <div id="carregamento-pergunta-produtos"
+                 class="pergunta-produtos-loading d-none"
+                 role="status"
+                 aria-live="polite">
+                <span class="spinner-border" aria-hidden="true"></span>
+                <span>Analisando os dados dos produtos...</span>
+            </div>
+
+            <section id="resposta-pergunta-produtos"
+                     class="pergunta-produtos-resposta d-none"
+                     aria-labelledby="titulo-resposta-produtos"
+                     aria-live="polite">
+                <div class="pergunta-produtos-resposta-titulo d-flex align-items-center justify-content-between gap-3 flex-wrap">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="pergunta-produtos-resposta-icone rounded-circle d-inline-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                        </span>
+                        <h2 id="titulo-resposta-produtos" class="mb-0">Resposta</h2>
+                    </div>
+                    <span class="badge rounded-pill text-bg-light border">SicsAnalytics</span>
+                </div>
+                <div id="texto-resposta-produtos" class="pergunta-produtos-resposta-texto"></div>
+            </section>
+        </section>
+    </div>
+</main>
+
+<script src="~/Scripts/JavaScript/pergunta-produtos.js"></script>

@@ -36,11 +36,11 @@
         <div class="container-fluid">
 
             <!-- Logo -->
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
                 <img class="rounded-1" src="~/Content/img/softHairBranca.png" alt="Logo soft">
             </a>
 
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
                 <div class="contador-copa">
                     <h6>Copa do Mundo 2026</h6>
 
@@ -97,7 +97,7 @@
 
                     <!-- Home -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#home"
+                        <a class="nav-link dropdown-toggle" href="@Url.Action("Index", "Home")"
                            id="homeDropdown"
                            role="button"
                            data-bs-toggle="dropdown"
@@ -105,10 +105,15 @@
                             inicio
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="homeDropdown">
-                            <li><a class="dropdown-item" href="#avisos">Avisos</a></li>
-                            <li><a class="dropdown-item" href="#aniversariantes">Aniversariantes</a></li>
-                            <li><a class="dropdown-item" href="#calendar">Calendário</a></li>
+                            <li><a class="dropdown-item" href="@Url.Action("Index", "Home")#avisos">Avisos</a></li>
+                            <li><a class="dropdown-item" href="@Url.Action("Index", "Home")#aniversariantes">Aniversariantes</a></li>
+                            <li><a class="dropdown-item" href="@Url.Action("Index", "Home")#calendar">Calendário</a></li>
                         </ul>
+                    </li>
+
+                    <!-- Terminal consulta -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "PerguntaProdutos")#lancamentos">Terminal</a>
                     </li>
 
                     <!-- Institucional -->
@@ -121,16 +126,15 @@
                             Institucional
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="instDropdown">
-                            <li><a class="dropdown-item" href="#ginastica">Ginástica</a></li>
-                            <li><a class="dropdown-item" href="#regras">Regras</a></li>
-                            <li><a class="dropdown-item" href="#horario">Refeição</a></li>
+                            <li><a class="dropdown-item" href="@Url.Action("Index", "Home")#ginastica">Ginástica</a></li>
+                            <li><a class="dropdown-item" href="@Url.Action("Index", "Home")#regras">Regras</a></li>
+                            <li><a class="dropdown-item" href="@Url.Action("Index", "Home")#horario">Refeição</a></li>
                         </ul>
                     </li>
 
                     <!-- Links diretos -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#lancamentos">Lançamentos</a>
-                    </li>
+                        <a class="nav-link" href="@Url.Action("Index", "Home")#lancamentos">Lançamentos</a>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#"
@@ -144,16 +148,17 @@
                             <li><a class="dropdown-item" href="http://192.168.0.200/relatorios/">Relatorios</a></li>
                             <li><a class="dropdown-item" href="http://192.168.0.203/sics/AgendamentoReuniao/" target="_blank">Agendamentos</a></li>
                             <li><a class="dropdown-item" href="http://192.168.0.203/sics/">SICS</a></li>
+                            @*<li><a class="dropdown-item" href="@Url.Action("Index", "PerguntaProdutos")">Perguntas sobre produtos</a></li>*@
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#ramais">Ramais</a>
+                        <a class="nav-link" href="@Url.Action("Index", "Home")#ramais">Ramais</a>
                     </li>
 
                     @*<li class="nav-item">
-                            <a class="nav-link" href="#solicitacoes">Solicitações</a>
-                        </li>*@
+            <a class="nav-link" href="#solicitacoes">Solicitações</a>
+        </li>*@
                 </ul>
             </div>
         </div>
@@ -193,8 +198,11 @@
     <script src="https://cdn.datatables.net/v/dt/dt-2.2.2/datatables.min.js" integrity="sha384-2Ul6oqy3mEjM7dBJzKOck1Qb/mzlO+k/0BQv3D3C7u+Ri9+7OBINGa24AeOv5rgu" crossorigin="anonymous"></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
 
-    <script src="~/Scripts/JavaScript/calendar.js"></script>
-    <script src="~/Scripts/JavaScript/datables.js"></script>
+    @if (ViewContext.RouteData.Values["controller"].ToString() == "Home")
+    {
+        <script src="~/Scripts/JavaScript/calendar.js"></script>
+        <script src="~/Scripts/JavaScript/datables.js"></script>
+    }
     <script src="~/Scripts/JavaScript/script.js"></script>
 </body>
 </html>

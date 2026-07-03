@@ -1,0 +1,146 @@
+@model Intranet.Models.PerguntaProdutosRespostaViewModel
+@using Intranet.Models
+
+@if (Model == null || Model.Blocos == null || Model.Blocos.Count == 0)
+{
+    <div class="alert alert-info mb-0" role="alert">
+        Nenhuma resposta foi retornada para esta pergunta.
+    </div>
+}
+else
+{
+    <div class="resposta-produtos-stack d-flex flex-column gap-3">
+        @foreach (var bloco in Model.Blocos)
+        {
+            if (bloco.Tipo == "produto")
+            {
+                var codigoProduto = string.Empty;
+                var nomeProduto = bloco.Texto;
+                var temItensVisiveis = false;
+
+                if (bloco.Itens != null)
+                {
+                    foreach (var itemProduto in bloco.Itens)
+                    {
+                        if (itemProduto.Tipo == "codigo")
+                        {
+                            codigoProduto = string.IsNullOrWhiteSpace(itemProduto.Valor) ? itemProduto.Texto : itemProduto.Valor;
+                        }
+                        else if (itemProduto.Tipo == "nome")
+                        {
+                            nomeProduto = string.IsNullOrWhiteSpace(itemProduto.Valor) ? itemProduto.Texto : itemProduto.Valor;
+                        }
+                        else
+                        {
+                            temItensVisiveis = true;
+                        }
+                    }
+                }
+
+                var nomeContemCodigo = !string.IsNullOrWhiteSpace(codigoProduto) &&
+                    !string.IsNullOrWhiteSpace(nomeProduto) &&
+                    nomeProduto.IndexOf(codigoProduto, StringComparison.OrdinalIgnoreCase) >= 0;
+                var exibirCodigo = !string.IsNullOrWhiteSpace(codigoProduto) && !nomeContemCodigo;
+                var exibirSeparador = exibirCodigo && !string.IsNullOrWhiteSpace(nomeProduto);
+
+                <article class="resposta-produto bg-white border rounded-3 shadow-sm overflow-hidden">
+                    <div class="resposta-produto-cabecalho border-bottom p-3 p-md-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <span class="resposta-produto-numero flex-shrink-0">@bloco.Numero</span>
+                            <div class="flex-grow-1">
+                                <span class="resposta-produto-label d-block text-uppercase fw-bold mb-1">Produto recomendado</span>
+                                <h3 class="h5 fw-bold mb-0">
+                                    @if (exibirCodigo)
+                                    {
+                                        <span class="resposta-produto-codigo">@Html.Raw(PerguntaProdutosRespostaParser.FormatarInline(codigoProduto))</span>
+                                        if (exibirSeparador)
+                                        {
+                                            <span class="resposta-produto-separador"> - </span>
+                                        }
+                                    }
+                                    @if (!string.IsNullOrWhiteSpace(nomeProduto))
+                                    {
+                                        <span>@Html.Raw(PerguntaProdutosRespostaParser.FormatarInline(nomeProduto))</span>
+                                    }
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    @if (bloco.Itens != null && temItensVisiveis)
+                    {
+                        <div class="p-3 p-md-4">
+                            <div class="row g-3">
+                                @foreach (var item in bloco.Itens)
+                                {
+                                    if (item.Tipo == "codigo" || item.Tipo == "nome")
+                                    {
+                                        continue;
+                                    }
+
+                                    var valor = string.IsNullOrWhiteSpace(item.Valor) ? item.Texto : item.Valor;
+
+                                    if (item.Tipo == "meta")
+                                    {
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="resposta-dado h-100 rounded-3 border p-3">
+                                                <span class="resposta-dado-rotulo d-block text-uppercase fw-bold mb-1">@item.Rotulo</span>
+                                                <strong>@Html.Raw(PerguntaProdutosRespostaParser.FormatarInline(valor))</strong>
+                                            </div>
+                                        </div>
+                                    }
+                                    else if (item.Tipo == "justificativa")
+                                    {
+                                        <div class="col-12">
+                                            <div class="resposta-justificativa rounded-3 p-3">
+                                                <span class="resposta-dado-rotulo d-block text-uppercase fw-bold mb-2">Por que este produto?</span>
+                                                <div>@Html.Raw(PerguntaProdutosRespostaParser.FormatarInline(valor))</div>
+                                            </div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="col-12">
+                                            <div class="resposta-texto-normal rounded-3 border p-3">
+                                                @if (!string.IsNullOrWhiteSpace(item.Rotulo))
+                                                {
+                                                    <span class="resposta-dado-rotulo d-block text-uppercase fw-bold mb-1">@item.Rotulo</span>
+                                                }
+                                                <div>@Html.Raw(PerguntaProdutosRespostaParser.FormatarInline(valor))</div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    }
+                </article>
+            }
+            else if (bloco.Tipo == "titulo")
+            {
+                <div class="resposta-subtitulo d-flex align-items-center gap-2 mt-2">
+                    <span class="resposta-subtitulo-icone rounded-circle d-inline-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                    </span>
+                    <h3 class="h6 fw-bold text-uppercase mb-0">@Html.Raw(PerguntaProdutosRespostaParser.FormatarInline(bloco.Texto))</h3>
+                </div>
+            }
+            else if (bloco.Tipo == "lista")
+            {
+                <ul class="list-group resposta-lista">
+                    @foreach (var item in bloco.Itens)
+                    {
+                        var valor = string.IsNullOrWhiteSpace(item.Valor) ? item.Texto : item.Valor;
+                        <li class="list-group-item">
+                            @Html.Raw(PerguntaProdutosRespostaParser.FormatarInline(valor))
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="resposta-paragrafo mb-0">@Html.Raw(PerguntaProdutosRespostaParser.FormatarInline(bloco.Texto))</p>
+            }
+        }
+    </div>
+}
