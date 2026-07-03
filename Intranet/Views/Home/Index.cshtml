@@ -1,1180 +1,1115 @@
 ﻿@*BANNER*@
 <header>
+   @* <div class="container">
+        <img src="~/Content/img/albumpag1.png" alt="" class="img-fluid d-none d-sm-block">
+    </div>*@
+
+
+
     <div class="container">
-        <img src="~/Content/img/copa_do_mundo.png" alt="" class="img-fluid d-none d-sm-block">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/Content/img/albumpag1.png" class="d-block w-100" alt="~/Content/img/albumpag2.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/img/albumpag2.png" class="d-block w-100" alt="~/Content/img/albumpag3.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/img/albumpag3.png" class="d-block w-100" alt="~/Content/img/albumpag1.png">
+                </div>
+            </div>
+            <div class="carousel-indicators"> 
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
     </div>
 </header>
 
-@*MODAIS AVISOS BOLOTAS*@
-<section id="avisos" style="background-color:darkgreen">
-    <div class="container-fluid my-5 pb-5">
-        <div class="py-5 fw-bolder text-center">
-            <h2 class="tt">
-                Avisos
-            </h2>
-        </div>
-        <div class="text-center text-white">
-            <div>
-                <strong>Todos Avisos</strong> importantes Aparecerão aqui
-                <strong>Compartilhe</strong> no ambiente de trabalho.
+ @*MODAIS AVISOS BOLOTAS*@
+    <section id="avisos" style="background-color:darkgreen">
+        <div class="container-fluid my-5 pb-5">
+            <div class="py-5 fw-bolder text-center">
+                <h2 class="tt">
+                    Avisos
+                </h2>
             </div>
-        </div>
-        <div class="row pt-5 justify-content-center">
-            <div class="col d-flex justify-content-center text-center">
-                <div data-bs-toggle="modal" data-bs-target="#encomenda">
-                    <div class="card-body-avisos text-center justify-content-center px-3 mx-5 mb-4 ">
-                        <h5 class="card-title py-2 text-success">
-                            <i class="fa-solid fa-dolly px-1"></i>
-                            Entregas pessoais
-                        </h5>
-                        <div class="card-text text-break">
-                            Regras para o recebimento de entregas pessoais
-                            no ambiente de trabalho.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col d-flex justify-content-center">
-                <div data-bs-toggle="modal" data-bs-target="#emprestimo">
-                    <div class="card-body-avisos text-center justify-content-center p-3 mx-5 mb-4">
-                        <h5 class="card-title py-2 text-danger">
-                            <i class="fa-solid fa-handshake-angle"></i>
-                            Empréstimos
-                        </h5>
-                        <div class="card-text">
-                            Informações sobre empréstimo consignado: o que você precisa
-                            saber antes de contratar.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col d-flex justify-content-center">
+            <div class="text-center text-white">
                 <div>
-                    <a href="#rgramais">
-                        <div class="card-body-avisos text-center justify-content-center p-3 mx-5 mb-4">
-                            <h5 class="card-title py-2" style="color: darkorange;">
-                                <i class="fa-solid fa-headset px-1"></i>
-                                Atenção às Regras
+                    <strong>Todos Avisos</strong> importantes Aparecerão aqui
+                    <strong>Compartilhe</strong> no ambiente de trabalho.
+                </div>
+            </div>
+            <div class="row pt-5 justify-content-center">
+                <div class="col d-flex justify-content-center text-center">
+                    <div data-bs-toggle="modal" data-bs-target="#encomenda">
+                        <div class="card-body-avisos text-center justify-content-center px-3 mx-5 mb-4 ">
+                            <h5 class="card-title py-2 text-success">
+                                <i class="fa-solid fa-dolly px-1"></i>
+                                Entregas pessoais
                             </h5>
-                            <div class="card-text">
-                                Fique atento! Erros durante as ligações têm gerado cobranças indevidas a nossa
-                                Empresa.
+                            <div class="card-text text-break">
+                                Regras para o recebimento de entregas pessoais
+                                no ambiente de trabalho.
                             </div>
                         </div>
-                    </a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div data-bs-toggle="modal" data-bs-target="#emprestimo">
+                        <div class="card-body-avisos text-center justify-content-center p-3 mx-5 mb-4">
+                            <h5 class="card-title py-2 text-danger">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                                Empréstimos
+                            </h5>
+                            <div class="card-text">
+                                Informações sobre empréstimo consignado: o que você precisa
+                                saber antes de contratar.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div>
+                        <a href="#rgramais">
+                            <div class="card-body-avisos text-center justify-content-center p-3 mx-5 mb-4">
+                                <h5 class="card-title py-2" style="color: darkorange;">
+                                    <i class="fa-solid fa-headset px-1"></i>
+                                    Atenção às Regras
+                                </h5>
+                                <div class="card-text">
+                                    Fique atento! Erros durante as ligações têm gerado cobranças indevidas a nossa
+                                    Empresa.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @*ENCOMENDAS*@
+    <div class="modal fade" id="encomenda" tabindex="-1" aria-labelledby="encomendaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered mx-auto">
+            <div class="modal-content bg-light">
+                <div class="modal-header" style="background-color:slateblue; color:white;">
+                    <h5 class="modal-title fw-bold" id="encomendaLabel">Entregas Pessoais</h5>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li class="py-2">
+                            <strong>Atenção:</strong> A empresa não se responsabiliza por encomendas
+                            pessoais.
+                        </li>
+                        <li class="py-2">
+                            <strong>Entregas:</strong> Não há conferência nem controle das encomendas
+                            recebidas.
+                        </li>
+                        <li class="py-2">
+                            <strong>Retirada:</strong> As encomendas devem ser retiradas no mesmo dia,
+                            durante o almoço ou após o expediente.
+                        </li>
+                        <li class="py-2"><strong>Limite:</strong> Volumes grandes não serão aceitos.</li>
+                    </ul>
+                    <div class="d-flex justify-content-center gap-2 mt-3">
+                        <button class="btn btn-outline-success" data-bs-toggle="modal"
+                                data-bs-target="#encomendaFull" data-bs-dismiss="modal">
+                            Termo completo
+                        </button>
+                        <button class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
 
-@*ENCOMENDAS*@
-<div class="modal fade" id="encomenda" tabindex="-1" aria-labelledby="encomendaLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered mx-auto">
-        <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:slateblue; color:white;">
-                <h5 class="modal-title fw-bold" id="encomendaLabel">Entregas Pessoais</h5>
-            </div>
-            <div class="modal-body">
-                <ul class="list-unstyled">
-                    <li class="py-2">
-                        <strong>Atenção:</strong> A empresa não se responsabiliza por encomendas
-                        pessoais.
-                    </li>
-                    <li class="py-2">
-                        <strong>Entregas:</strong> Não há conferência nem controle das encomendas
-                        recebidas.
-                    </li>
-                    <li class="py-2">
-                        <strong>Retirada:</strong> As encomendas devem ser retiradas no mesmo dia,
-                        durante o almoço ou após o expediente.
-                    </li>
-                    <li class="py-2"><strong>Limite:</strong> Volumes grandes não serão aceitos.</li>
-                </ul>
-                <div class="d-flex justify-content-center gap-2 mt-3">
-                    <button class="btn btn-outline-success" data-bs-toggle="modal"
-                            data-bs-target="#encomendaFull" data-bs-dismiss="modal">
-                        Termo completo
+    <div class="modal fade" id="encomendaFull" tabindex="-1" aria-labelledby="encomendaFullLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 100%;">
+            <div class="modal-content bg-light">
+                <div class="modal-header" style="background-color:slateblue; color:white;">
+                    <h5 class="modal-title fw-bold" id="encomendaFullLabel">Termo Completo — Encomendas Pessoais</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <img class="img-fluid shadow-sm" src="~/Content/img/1en.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid shadow-sm" src="~/Content/img/2en.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer bg-light border-top-0">
+                    <button class="btn btn-outline-danger"
+                            data-bs-dismiss="modal">
+                        Fechar
                     </button>
-                    <button class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="modal fade" id="encomendaFull" tabindex="-1" aria-labelledby="encomendaFullLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 100%;">
-        <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:slateblue; color:white;">
-                <h5 class="modal-title fw-bold" id="encomendaFullLabel">Termo Completo — Encomendas Pessoais</h5>
-            </div>
-            <div class="modal-body">
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <img class="img-fluid shadow-sm" src="~/Content/img/1en.jpg" alt="">
-                    </div>
-                    <div class="col-md-6">
-                        <img class="img-fluid shadow-sm" src="~/Content/img/2en.jpg" alt="">
+    @*EMPRÉSTIMO*@
+    <div class="modal fade" id="emprestimo" tabindex="-1" aria-labelledby="emprestimoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered mx-auto">
+            <div class="modal-content bg-light">
+                <div class="modal-header" style="background-color:slateblue; color:white;">
+                    <h5 class="modal-title fw-bold" id="emprestimoLabel">Empréstimo Consignado</h5>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li class="py-2">
+                            <strong>Desconto em folha:</strong> O pagamento será realizado diretamente pela
+                            folha de pagamento.
+                        </li>
+                        <li class="py-2">
+                            <strong>Prazo do RH:</strong> Envie seus dados em até <strong>
+                                1 dia
+                                útil
+                            </strong> após a solicitação.
+                        </li>
+                        <li class="py-2">
+                            <strong>Conferência:</strong> Verifique a instituição, o valor, o número de
+                            parcelas e a data de início do desconto antes de confirmar.
+                        </li>
+                        <li class="py-2">
+                            <strong>Segurança:</strong> Não compartilhe senhas e desconfie de ofertas que
+                            pareçam vantajosas demais.
+                        </li>
+                        <li class="py-2">
+                            <strong>Suporte:</strong> Em caso de problemas, entre em contato primeiro com o
+                            banco e, se necessário, com o RH.
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-center gap-2 mt-3">
+                        <button class="btn btn-outline-success" data-bs-toggle="modal"
+                                data-bs-target="#emprestimoFull" data-bs-dismiss="modal">
+                            Termo completo
+                        </button>
+                        <button class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
                     </div>
                 </div>
             </div>
-
-            <div class="modal-footer bg-light border-top-0">
-                <button class="btn btn-outline-danger"
-                        data-bs-dismiss="modal">
-                    Fechar
-                </button>
-            </div>
         </div>
     </div>
-</div>
 
-@*EMPRÉSTIMO*@
-<div class="modal fade" id="emprestimo" tabindex="-1" aria-labelledby="emprestimoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered mx-auto">
-        <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:slateblue; color:white;">
-                <h5 class="modal-title fw-bold" id="emprestimoLabel">Empréstimo Consignado</h5>
-            </div>
-            <div class="modal-body">
-                <ul class="list-unstyled">
-                    <li class="py-2">
-                        <strong>Desconto em folha:</strong> O pagamento será realizado diretamente pela
-                        folha de pagamento.
-                    </li>
-                    <li class="py-2">
-                        <strong>Prazo do RH:</strong> Envie seus dados em até <strong>
-                            1 dia
-                            útil
-                        </strong> após a solicitação.
-                    </li>
-                    <li class="py-2">
-                        <strong>Conferência:</strong> Verifique a instituição, o valor, o número de
-                        parcelas e a data de início do desconto antes de confirmar.
-                    </li>
-                    <li class="py-2">
-                        <strong>Segurança:</strong> Não compartilhe senhas e desconfie de ofertas que
-                        pareçam vantajosas demais.
-                    </li>
-                    <li class="py-2">
-                        <strong>Suporte:</strong> Em caso de problemas, entre em contato primeiro com o
-                        banco e, se necessário, com o RH.
-                    </li>
-                </ul>
-                <div class="d-flex justify-content-center gap-2 mt-3">
-                    <button class="btn btn-outline-success" data-bs-toggle="modal"
-                            data-bs-target="#emprestimoFull" data-bs-dismiss="modal">
-                        Termo completo
+    <div class="modal fade" id="emprestimoFull" tabindex="-1" aria-labelledby="emprestimoFullLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 100%;">
+            <div class="modal-content bg-light">
+                <div class="modal-header" style="background-color:slateblue; color:white;">
+                    <h5 class="modal-title fw-bold" id="emprestimoFullLabel">Termo Empréstimo Consignado</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-sm-4">
+                            <img class="img-fluid shadow-sm" src="~/Content/img/1ec.jpg" alt="">
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="img-fluid shadow-sm" src="~/Content/img/2ec.jpg" alt="">
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="img-fluid shadow-sm" src="~/Content/img/3ec.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light border-top-0">
+                    <button class="btn btn-outline-danger"
+                            data-bs-dismiss="modal">
+                        Fechar
                     </button>
-                    <button class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="modal fade" id="emprestimoFull" tabindex="-1" aria-labelledby="emprestimoFullLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 100%;">
-        <div class="modal-content bg-light">
-            <div class="modal-header" style="background-color:slateblue; color:white;">
-                <h5 class="modal-title fw-bold" id="emprestimoFullLabel">Termo Empréstimo Consignado</h5>
-            </div>
-            <div class="modal-body">
-                <div class="row g-3">
-                    <div class="col-sm-4">
-                        <img class="img-fluid shadow-sm" src="~/Content/img/1ec.jpg" alt="">
-                    </div>
-                    <div class="col-sm-4">
-                        <img class="img-fluid shadow-sm" src="~/Content/img/2ec.jpg" alt="">
-                    </div>
-                    <div class="col-sm-4">
-                        <img class="img-fluid shadow-sm" src="~/Content/img/3ec.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer bg-light border-top-0">
-                <button class="btn btn-outline-danger"
-                        data-bs-dismiss="modal">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-@*ANIVERSARIANTES*@
-<section id="aniversariantes" class="reveal">
-    <div class="py-5 fw-bolder text-center">
-        <h2 class="tt">
-            Aniversariantes
-        </h2>
-    </div>
-    <div class="container table-responsive rounded-3 bg-white w-75">
-        <table id="niver" class="table table-striped table-hover display">
-            <thead style="background-color: slateblue; color: white;" ead>
-                <tr>
-                    <th style="background-color: slateblue; color: white;">Nome</th>
-                    <th style="background-color: slateblue; color: white;">Data</th>
-                    <th style="background-color: slateblue; color: white;">Departamento</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Crislaine Batista</td>
-                    <td>06/06/2026</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Lucinea Mota</td>
-                    <td>14/06/2026</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Wanessa Cristina</td>
-                    <td>17/06/2026</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Angelica Mariana</td>
-                    <td>21/06/2026</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>João Paulo</td>
-                    <td>25/06/2026</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Antonio Sérgio</td>
-                    <td>29/06/2026</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Berenice Longuinhos</td>
-                    <td>03/06/2026</td>
-                    <td>Administrativo</td>
-                </tr>
-                <tr>
-                    <td>Rafael Rocha</td>
-                    <td>16/06/2026</td>
-                    <td>Administrativo</td>
-                </tr>
-                <tr>
-                    <td>Lorrayane Almeida</td>
-                    <td>18/06/2026</td>
-                    <td>Administrativo</td>
-                </tr>
-                <tr>
-                    <td>Guilherme Anisio</td>
-                    <td>23/06/2026</td>
-                    <td>CD</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-
-@*CALENDARIO*@
-<section id="calendario" class="reveal" style="background-color: darkgreen">
-    <div class="container-fluid my-5 pb-5" @*style="background:url(/Content/img/back.png)"*@>
-        <div class="fw-bolder text-center py-5">
-            <h2 class="tt">Calendário</h2>
-        </div>
-        <div class="container rounded-5 bg-white w-75 text-center">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div id="calendar" class="p-3"></div>
-                </div>
-                <div class="col-lg-6 p-3">
-                    <h5 class="tt card-title mb-5 text-white">Datas Comemorativas</h5>
-                    <ul id="holiday-legend" class="list-unstyled text-start card-body"></ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-@*GINASTICA*@
-<section id="ginastica" class="reveal">
-    <div class="py-5 fw-bolder text-center">
-        <h2 class="tt">
-            Ginástica
-        </h2>
-    </div>
-    <div class="container table-responsive rounded-3 bg-white w-75">
-        <table id="gym" class="table table-striped table-hover display">
-            <thead style="background-color: slateblue; color: white;" ead>
-                <tr>
-                    <th style="background-color:purple; color: white;">Data</th>
-                    <th style="background-color:purple; color: white;">Nome</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>01/06/2026</td>
-                    <td>Daisy Magna</td>
-                </tr>
-                <tr>
-                    <td>02/06/2026</td>
-                    <td>Danielle Stefânia</td>
-                </tr>
-                <tr>
-                    <td>03/06/2026</td>
-                    <td>Deivid Rodrigues</td>
-                </tr>
-                <tr>
-                    <td>04/06/2026</td>
-                    <td>Feriado</td>
-                </tr>
-                <tr>
-                    <td>05/06/2026</td>
-                    <td>Feriado</td>
-                </tr>
-                <tr>
-                    <td>08/06/2026</td>
-                    <td>Elizangela</td>
-                </tr>
-                <tr>
-                    <td>09/06/2026</td>
-                    <td>Fagner Miguel</td>
-                </tr>
-                <tr>
-                    <td>10/06/2026</td>
-                    <td>Felipe</td>
-                </tr>
-                <tr>
-                    <td>11/06/2026</td>
-                    <td>Giovanna</td>
-                </tr>
-                <tr>
-                    <td>12/06/2026</td>
-                    <td>FISIO</td>
-                </tr>
-                <tr>
-                    <td>15/06/2026</td>
-                    <td>Isadora Mirella</td>
-                </tr>
-                <tr>
-                    <td>16/06/2026</td>
-                    <td>Yuri Rafael</td>
-                </tr>
-                <tr>
-                    <td>17/06/2026</td>
-                    <td>Karoline Oliveira</td>
-                </tr>
-                <tr>
-                    <td>18/06/2026</td>
-                    <td>Luiz Gustavo</td>
-                </tr>
-                <tr>
-                    <td>19/06/2026</td>
-                    <td>Natã</td>
-                </tr>
-                <tr>
-                    <td>22/06/2026</td>
-                    <td>Paula</td>
-                </tr>
-                <tr>
-                    <td>23/06/2026</td>
-                    <td>Pedro Ivo</td>
-                </tr>
-                <tr>
-                    <td>24/06/2026</td>
-                    <td>Quintiliana (Tininha)</td>
-                </tr>
-                <tr>
-                    <td>25/06/2026</td>
-                    <td>Renato</td>
-                </tr>
-                <tr>
-                    <td>26/06/2026</td>
-                    <td>Tatiane Franco</td>
-                </tr>
-                <tr>
-                    <td>29/06/2026</td>
-                    <td>Thalyta</td>
-                </tr>
-                <tr>
-                    <td>30/06/2026</td>
-                    <td>Victor César</td>
-                </tr>
-                <tr>
-                    <td>01/07/2026</td>
-                    <td>Adila Ribeiro</td>
-                </tr>
-                <tr>
-                    <td>02/07/2026</td>
-                    <td>Aline Moreira</td>
-                </tr>
-                <tr>
-                    <td>03/07/2026</td>
-                    <td>Andreza</td>
-                </tr>
-                <tr>
-                    <td>06/07/2026</td>
-                    <td>Berenice Longuinhos</td>
-                </tr>
-                <tr>
-                    <td>07/07/2026</td>
-                    <td>Crimacia Oliveira</td>
-                </tr>
-                <tr>
-                    <td>08/07/2026</td>
-                    <td>Daisy Magna</td>
-                </tr>
-                <tr>
-                    <td>09/07/2026</td>
-                    <td>Danielle Stefânia</td>
-                </tr>
-                <tr>
-                    <td>10/07/2026</td>
-                    <td>Deivid Rodrigues</td>
-                </tr>
-                <tr>
-                    <td>13/07/2026</td>
-                    <td>Elizangela</td>
-                </tr>
-                <tr>
-                    <td>14/07/2026</td>
-                    <td>Fagner Miguel</td>
-                </tr>
-                <tr>
-                    <td>15/07/2026</td>
-                    <td>Felipe</td>
-                </tr>
-                <tr>
-                    <td>16/07/2026</td>
-                    <td>Giovanna</td>
-                </tr>
-                <tr>
-                    <td>17/07/2026</td>
-                    <td>Isadora Mirella</td>
-                </tr>
-                <tr>
-                    <td>20/07/2026</td>
-                    <td>Yuri Rafael</td>
-                </tr>
-                <tr>
-                    <td>21/07/2026</td>
-                    <td>Karoline Oliveira</td>
-                </tr>
-                <tr>
-                    <td>22/07/2026</td>
-                    <td>Luiz Gustavo</td>
-                </tr>
-                <tr>
-                    <td>23/07/2026</td>
-                    <td>Natã</td>
-                </tr>
-                <tr>
-                    <td>24/07/2026</td>
-                    <td>Paula</td>
-                </tr>
-                <tr>
-                    <td>27/07/2026</td>
-                    <td>Pedro Ivo</td>
-                </tr>
-                <tr>
-                    <td>28/07/2026</td>
-                    <td>Quintiliana (Tininha)</td>
-                </tr>
-                <tr>
-                    <td>29/07/2026</td>
-                    <td>Renato</td>
-                </tr>
-                <tr>
-                    <td>30/07/2026</td>
-                    <td>Tatiane Franco</td>
-                </tr>
-                <tr>
-                    <td>31/07/2026</td>
-                    <td>Thalyta</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-
-@*INSTITUCIONAL*@
-<section id="regras" class="reveal" style="background-color: darkgreen">
-    <div class="container-fluid text-white my-5" style="padding-bottom:75px;">
+    @*ANIVERSARIANTES*@
+    <section id="aniversariantes" class="reveal">
         <div class="py-5 fw-bolder text-center">
             <h2 class="tt">
-                Institucional
+                Aniversariantes
             </h2>
         </div>
-
-        <div class="container py-5 rounded-5" style="background-color: #e6b700">
-            <div class="col-12">
-                <div class="text-center mb-5">
-                    <strong>Respeite as diferenças</strong> e colabore para a boa
-                    <strong>convivência e harmonia</strong> no ambiente de trabalho.
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-center">
-                        TOM DE VOZ
-                    </h5>
-                    <hr />
-                    <div class="text-center">
-                        <strong>Cuidado</strong> para não atrapalhar quem esta proximo a você.
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-center">
-                        SEJA ECOLÓGICO
-                    </h5>
-                    <hr />
-                    <div class="text-center">
-                        Pratique os 3 Rs: <br>
-                        <strong>Reduza, Reutilize e Recicle.</strong>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-center">
-                        AMBIENTE LOCAL
-                    </h5>
-                    <hr />
-                    <div class="text-center">
-                        Um espaço organizado aumenta a, <strong>produtividade e o bem-estar</strong> diario.
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-center">
-                        RECADOS DO SETOR
-                    </h5>
-                    <hr />
-                    <div class="text-center">
-                        <strong>Seja gentil</strong>, anote o recado <strong>passe para o responsavel</strong>
-                        assim que possível.
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-center">
-                        LOCAL DE TRABALHO
-                    </h5>
-                    <hr />
-                    <div class="text-center">
-                        <strong>Não comente</strong> fofocas e <strong>não crie</strong> ou espalhe boatos no Ambiente de trabalho.
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-center">
-                        ENTRE RAMAIS
-                    </h5>
-                    <hr />
-                    <div class="text-center">
-                        Não insista em uma ligação caso ramal esteja ocupado, <strong>tente mais tarde.</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-@*ESCALA DO ALMOCO*@
-<section id="horario" class="reveal">
-    <div class="py-5 text-center">
-        <h2 class="tt">
-            Horário de Almoço
-        </h2>
-    </div>
-    <div class="container table-responsive rounded-3 bg-white w-75">
-        <div class="pt-3">
-            <table class="hours table table-striped table-hover display">
+        <div class="container table-responsive rounded-3 bg-white w-75">
+            <table id="niver" class="table table-striped table-hover display">
                 <thead style="background-color: slateblue; color: white;" ead>
                     <tr>
-                        <th style="background-color: slateblue; color: white;" colspan="5" class="text-center">
-                            COZINHA
-                        </th>
-                    </tr>
-                    <tr>
-                        <th style="background-color: slateblue; color: white;">11h30min</th>
-                        <th style="background-color: slateblue; color: white;">12h00min</th>
-                        <th style="background-color: slateblue; color: white;">12h30min</th>
-                        <th style="background-color: slateblue; color: white;">13h00min</th>
-                        <th style="background-color: slateblue; color: white;">13h30min</th>
+                        <th style="background-color: slateblue; color: white;">Nome</th>
+                        <th style="background-color: slateblue; color: white;">Data</th>
+                        <th style="background-color: slateblue; color: white;">Departamento</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Gerald</td>
-                        <td>Berenice</td>
-                        <td>Nancy</td>
-                        <td>Fagner</td>
-                        <td>Tati</td>
+                        <td>Crislaine Batista</td>
+                        <td>06/06/2026</td>
+                        <td>Produção</td>
                     </tr>
                     <tr>
-                        <td>Felipe</td>
-                        <td>Tininha</td>
-                        <td>Andreza</td>
-                        <td>Deivid</td>
-                        <td></td>
+                        <td>Lucinea Mota</td>
+                        <td>14/06/2026</td>
+                        <td>Produção</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Crimarcia</td>
-                        <td>Luana</td>
-                        <td>Pedro</td>
-                        <td>Dani</td>
+                        <td>Wanessa Cristina</td>
+                        <td>17/06/2026</td>
+                        <td>Produção</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td>Adila</td>
-                        <td>Victor</td>
-                        <td>Lorrayne</td>
+                        <td>Angelica Mariana</td>
+                        <td>21/06/2026</td>
+                        <td>Produção</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>Diego</td>
-                        <td>Natã</td>
+                        <td>João Paulo</td>
+                        <td>25/06/2026</td>
+                        <td>Produção</td>
+                    </tr>
+                    <tr>
+                        <td>Antonio Sérgio</td>
+                        <td>29/06/2026</td>
+                        <td>Produção</td>
+                    </tr>
+                    <tr>
+                        <td>Berenice Longuinhos</td>
+                        <td>03/06/2026</td>
+                        <td>Administrativo</td>
+                    </tr>
+                    <tr>
+                        <td>Rafael Rocha</td>
+                        <td>16/06/2026</td>
+                        <td>Administrativo</td>
+                    </tr>
+                    <tr>
+                        <td>Lorrayane Almeida</td>
+                        <td>18/06/2026</td>
+                        <td>Administrativo</td>
+                    </tr>
+                    <tr>
+                        <td>Guilherme Anisio</td>
+                        <td>23/06/2026</td>
+                        <td>CD</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="pt-5">
-            <table class="hours table table-striped table-hover py-5 display">
+    </section>
+
+    @*CALENDARIO*@
+    <section id="calendario" class="reveal" style="background-color: darkgreen">
+        <div class="container-fluid my-5 pb-5" @*style="background:url(/Content/img/back.png)"*@>
+            <div class="fw-bolder text-center py-5">
+                <h2 class="tt">Calendário</h2>
+            </div>
+            <div class="container rounded-5 bg-white w-75 text-center">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div id="calendar" class="p-3"></div>
+                    </div>
+                    <div class="col-lg-6 p-3">
+                        <h5 class="tt card-title mb-5 text-white">Datas Comemorativas</h5>
+                        <ul id="holiday-legend" class="list-unstyled text-start card-body"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @*GINASTICA*@
+    <section id="ginastica" class="reveal">
+        <div class="py-5 fw-bolder text-center">
+            <h2 class="tt">
+                Ginástica
+            </h2>
+        </div>
+        <div class="container table-responsive rounded-3 bg-white w-75">
+            <table id="gym" class="table table-striped table-hover display">
                 <thead style="background-color: slateblue; color: white;" ead>
                     <tr>
-                        <th style="background-color: slateblue; color: white;" colspan="5" class="text-center">
-                            REFEITÓRIO 1º PISO
-                        </th>
-                    </tr>
-                    <tr>
-                        <th style="background-color: slateblue; color: white;">12h00</th>
-                        <th style="background-color: slateblue; color: white;">12h30</th>
-                        <th style="background-color: slateblue; color: white;">13h00min</th>
-                        <th style="background-color: slateblue; color: white;">13h15min</th>
-                        <th style="background-color: slateblue; color: white;">13h30min</th>
+                        <th style="background-color:purple; color: white;">Data</th>
+                        <th style="background-color:purple; color: white;">Nome</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Karoline (Jurídico)</td>
-                        <td>João</td>
-                        <td></td>
-                        <td>Luiz (TI)</td>
+                        <td>01/07/2026</td>
+                        <td>Adila Ribeiro</td>
+                    </tr>
+                    <tr>
+                        <td>02/07/2026</td>
+                        <td>Aline Moreira</td>
+                    </tr>
+                    <tr>
+                        <td>03/07/2026</td>
+                        <td>FISIO</td>
+                    </tr>
+                    <tr>
+                        <td>06/07/2026</td>
+                        <td>Andreza</td>
+                    </tr>
+                    <tr>
+                        <td>07/07/2026</td>
+                        <td>Berenice Longuinhos</td>
+                    </tr>
+                    <tr>
+                        <td>08/07/2026</td>
+                        <td>Crimacia Oliveira</td>
+                    </tr>
+                    <tr>
+                        <td>09/07/2026</td>
+                        <td>Daisy Magna</td>
+                    </tr>
+                    <tr>
+                        <td>10/07/2026</td>
+                        <td>Danielle Stefânia</td>
+                    </tr>
+                    <tr>
+                        <td>13/07/2026</td>
+                        <td>Deivid Rodrigues</td>
+                    </tr>
+                    <tr>
+                        <td>14/07/2026</td>
+                        <td>Elizangela</td>
+                    </tr>
+                    <tr>
+                        <td>15/07/2026</td>
+                        <td>Fagner Miguel</td>
+                    </tr>
+                    <tr>
+                        <td>16/07/2026</td>
+                        <td>Felipe</td>
+                    </tr>
+                    <tr>
+                        <td>17/07/2026</td>
+                        <td>Giovanna</td>
+                    </tr>
+                    <tr>
+                        <td>20/07/2026</td>
+                        <td>Isadora Mirella</td>
+                    </tr>
+                    <tr>
+                        <td>21/07/2026</td>
+                        <td>Yuri Rafael</td>
+                    </tr>
+                    <tr>
+                        <td>22/07/2026</td>
+                        <td>Karoline Oliveira</td>
+                    </tr>
+                    <tr>
+                        <td>23/07/2026</td>
+                        <td>Luiz Gustavo</td>
+                    </tr>
+                    <tr>
+                        <td>24/07/2026</td>
+                        <td>Natã</td>
+                    </tr>
+                    <tr>
+                        <td>27/07/2026</td>
                         <td>Paula</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Camila(MKT)</td>
-                        <td>Luiz (MKT)</td>
-                        <td></td>
-                        <td></td>
+                        <td>28/07/2026</td>
+                        <td>Pedro Ivo</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Livia</td>
-                        <td>Izabela(Fiscal)</td>
-                        <td></td>
-                        <td></td>
+                        <td>29/07/2026</td>
+                        <td>Tininha</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Thalyta</td>
-                        <td>Aline</td>
-                        <td></td>
-                        <td></td>
+                        <td>30/07/2026</td>
+                        <td>Renato</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Isadora Mirella</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>31/07/2026</td>
+                        <td>Tatiane Franco</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-    </div>
-</section>
+    </section>
 
-@*LANCAMENTOS*@
-<section id="lancamentos" class="reveal" style="background-color: darkgreen">
-    <div class="container-fluid my-5 pb-5">
-        <div class="pt-5 fw-bolder text-center">
-            <h2 class="tt">Lançamentos</h2>
-        </div>
-        <div class="container pb-5 rounded-5" style="background-color: #e6b700">
-            <div class="row mt-5 pt-4">
-                <div class=" col-md-6 col-lg-3 text-center align-content-end">
-                    <img src="~/Content/img/lisa_pe.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
-                    <div class="card-body py-3">
-                        <h5 class="card-title text-center tt" style="color:white;">Lisa Pé 10% Ureia</h5>
-                    </div>
-                </div>
-
-                <div class=" col-md-6 col-lg-3 text-center align-content-end">
-                    <img src="~/Content/img/gelatina_maracuja.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
-                    <div class="card-body py-3">
-                        <h5 class="card-title text-center tt" style="color:white;">Gelatina Maracujá</h5>
-                    </div>
-                </div>
-
-                <div class=" col-md-6 col-lg-3 text-center align-content-end">
-                    <img src="~/Content/img/luva_de_silicone.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
-                    <div class="card-body py-3">
-                        <h5 class="card-title text-center tt" style="color:white;">Lisa Luva de Silicone</h5>
-                    </div>
-                </div>
-
-                <div class=" col-md-6 col-lg-3 text-center align-content-end">
-                    <img src="~/Content/img/spray_clareador.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
-                    <div class="card-body py-3">
-                        <h5 class="card-title text-center tt" style="color:white;">Sprays Clareadores</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-@*RAMAIS*@
-<section id="ramais" class="reveal">
-    <div class="py-5 fw-bolder text-center">
-        <h2 class="tt">
-            Ramais
-        </h2>
-    </div>
-
-    <div class="container table-responsive rounded-3 bg-white w-75">
-        <table id="ramal" class="table table-striped table-hover display">
-            <thead>
-                <tr>
-                    <th style="background-color:purple; color: white;">Nome</th>
-                    <th style="background-color:purple; color: white;">Ramal</th>
-                    <th style="background-color:purple; color: white;">Email</th>
-                    <th style="background-color:purple; color: white;">Departamento</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Rodrigo Rocha</td>
-                    <td>7711</td>
-                    <td>rodrigo@softhair.com.br</td>
-                    <td>Diretor</td>
-                </tr>
-                <tr>
-                    <td>Berenice</td>
-                    <td>7700</td>
-                    <td>recepcao@softair.com.br</td>
-                    <td>Recepção</td>
-                </tr>
-                <tr>
-                    <td>Livia Carvalho</td>
-                    <td>7706</td>
-                    <td>promocoes@softhair.com.br</td>
-                    <td>Merchandising</td>
-                </tr>
-                <tr>
-                    <td>Elisangela França</td>
-                    <td>7763</td>
-                    <td>compras2@softhair.com.br</td>
-                    <td>Compras</td>
-                </tr>
-                <tr>
-                    <td>Talyta Cristyellem</td>
-                    <td>7747</td>
-                    <td>promocoes2@softhair.com.br</td>
-                    <td>Merchandising</td>
-                </tr>
-                <tr>
-                    <td>Deivid Rodrigues</td>
-                    <td>7742</td>
-                    <td>promocoes1@softhair.com.br</td>
-                    <td>Trade Marketing</td>
-                </tr>
-                <tr>
-                    <td>Rodrigo de Sousa</td>
-                    <td>7714</td>
-                    <td>rodsousa@softhair.com.br</td>
-                    <td>Comercial</td>
-                </tr>
-                <tr>
-                    <td>Paula Mendes</td>
-                    <td>7707</td>
-                    <td>comercial6@softhair.com.br</td>
-                    <td>Comercial</td>
-                </tr>
-                <tr>
-                    <td>Isadora Mirella</td>
-                    <td>7733</td>
-                    <td>comercial2@softhair.com.br</td>
-                    <td>Comercial</td>
-                </tr>
-                <tr>
-                    <td>João Victor</td>
-                    <td>7762</td>
-                    <td>comercial@softhair.com.br</td>
-                    <td>Comercial</td>
-                </tr>
-                <tr>
-                    <td>Gerald Dias</td>
-                    <td>7761</td>
-                    <td>comercial3@softhair.com.br</td>
-                    <td>Comercial</td>
-                </tr>
-                <tr>
-                    <td>Felipe Vieira</td>
-                    <td>7736</td>
-                    <td>comercial1@softhair.com.br</td>
-                    <td>Comercial</td>
-                </tr>
-                <tr>
-                    <td>Tatiane Franco</td>
-                    <td>7737</td>
-                    <td>comercialpedidos@softhair.com.br</td>
-                    <td>Comercial</td>
-                </tr>
-                <tr>
-                    <td>Rafael Rocha</td>
-                    <td>-</td>
-                    <td>rafael@softhair.com.br</td>
-                    <td>Gerência Comercial</td>
-                </tr>
-                <tr>
-                    <td>André Borges</td>
-                    <td>-</td>
-                    <td>andreborges@softhair.com.br</td>
-                    <td>Gerência Comercial</td>
-                </tr>
-                <tr>
-                    <td>Tininha</td>
-                    <td>7746</td>
-                    <td>pessoal1@softhair.com.br</td>
-                    <td>RH</td>
-                </tr>
-                <tr>
-                    <td>Pedro Ivo</td>
-                    <td>7751</td>
-                    <td>criacao@softhair.com.br</td>
-                    <td>Marketing</td>
-                </tr>
-                <tr>
-                    <td>Luana Alves</td>
-                    <td>7728</td>
-                    <td>luana.alves@softhair.com.br</td>
-                    <td>Marketing</td>
-                </tr>
-                <tr>
-                    <td>Camilla Clemence</td>
-                    <td>7729</td>
-                    <td>camilla.clemence@softhair.com.br</td>
-                    <td>Marketing</td>
-                </tr>
-                <tr>
-                    <td>Natã Durães</td>
-                    <td>7756</td>
-                    <td>publicidade3@softhair.com.br</td>
-                    <td>Marketing</td>
-                </tr>
-                <tr>
-                    <td>Luiz Gustavo</td>
-                    <td>-</td>
-                    <td>publicidade2@softhair.com.br</td>
-                    <td>Marketing</td>
-                </tr>
-                <tr>
-                    <td>Lorrayne Braga</td>
-                    <td>7708</td>
-                    <td>loja@softhair.com.br</td>
-                    <td>E-Commerce</td>
-                </tr>
-                <tr>
-                    <td>Alana Lemos</td>
-                    <td>7721</td>
-                    <td>laboratorio2@softhair.com.br</td>
-                    <td>Desenvolvimento</td>
-                </tr>
-                <tr>
-                    <td>Silvânia Maria</td>
-                    <td>-</td>
-                    <td>silvania@softhair.com.br</td>
-                    <td>Financeiro / Fiscal</td>
-                </tr>
-                <tr>
-                    <td>Ádila Ribeiro</td>
-                    <td>7752</td>
-                    <td>financeiro4@softhair.com.br</td>
-                    <td>Financeiro / Fiscal</td>
-                </tr>
-                <tr>
-                    <td>Renato</td>
-                    <td>7704</td>
-                    <td>fiscal@softhair.com.br</td>
-                    <td>Financeiro / Fiscal</td>
-                </tr>
-                <tr>
-                    <td>Danielle Stefânia</td>
-                    <td>7705</td>
-                    <td>financeiro1@softhair.com.br</td>
-                    <td>Financeiro / Fiscal</td>
-                </tr>
-                <tr>
-                    <td>Crimácia Oliveira</td>
-                    <td>7713</td>
-                    <td>faturamento@softhair.com.br</td>
-                    <td>Financeiro / Fiscal</td>
-                </tr>
-                <tr>
-                    <td>Nancy</td>
-                    <td>7720</td>
-                    <td>financeiro5@softhair.com.br</td>
-                    <td>Financeiro / Fiscal</td>
-                </tr>
-                <tr>
-                    <td>Letícia Rodrigues</td>
-                    <td>7701</td>
-                    <td>leticia@softhair.com.br</td>
-                    <td>Jurídico</td>
-                </tr>
-                <tr>
-                    <td>Andreza Domenicci</td>
-                    <td>7722</td>
-                    <td>andreza@softhair.com.br</td>
-                    <td>Jurídico</td>
-                </tr>
-                <tr>
-                    <td>Aline Moreira</td>
-                    <td>7731</td>
-                    <td>juridico2@softhair.com.br</td>
-                    <td>Jurídico</td>
-                </tr>
-                <tr>
-                    <td>Karoline Oliveira</td>
-                    <td>7739</td>
-                    <td>juridico1@softhair.com.br</td>
-                    <td>Jurídico</td>
-                </tr>
-                <tr>
-                    <td>Victor César</td>
-                    <td>7757</td>
-                    <td>juridico3@softhair.com.br</td>
-                    <td>Jurídico</td>
-                </tr>
-                <tr>
-                    <td>Luiz Guilherme</td>
-                    <td>7727</td>
-                    <td>cpd@softhair.com.br</td>
-                    <td>TI</td>
-                </tr>
-                <tr>
-                    <td>Fagner Miguel</td>
-                    <td>7749</td>
-                    <td>sistemas@softhair.com.br</td>
-                    <td>TI</td>
-                </tr>
-                <tr>
-                    <td>Denise Vasconcelos</td>
-                    <td>7755</td>
-                    <td>laboratorio@softhair.com.br</td>
-                    <td>Suprimentos</td>
-                </tr>
-                <tr>
-                    <td>Diego Madureira</td>
-                    <td>7718</td>
-                    <td>transportes@softhair.com.br</td>
-                    <td>Logística / Transportes</td>
-                </tr>
-                <tr>
-                    <td>Antônio Sérgio</td>
-                    <td>7717</td>
-                    <td>sergio@softhair.com.br</td>
-                    <td>Logística / Transportes</td>
-                </tr>
-                <tr>
-                    <td>Josiane Braga</td>
-                    <td>7721</td>
-                    <td>josiane@softhair.com.br</td>
-                    <td>Laboratório</td>
-                </tr>
-                <tr>
-                    <td>Michelle</td>
-                    <td>7735</td>
-                    <td>garantiaq3@softhair.com.br</td>
-                    <td>Laboratório</td>
-                </tr>
-                <tr>
-                    <td>Anna Karla</td>
-                    <td>7741</td>
-                    <td>industrial@softhair.com.br</td>
-                    <td>Laboratório</td>
-                </tr>
-                <tr>
-                    <td>Fernanda / Cida</td>
-                    <td>7741</td>
-                    <td>controleq4@softhair.com.br</td>
-                    <td>Laboratório</td>
-                </tr>
-                <tr>
-                    <td>Cecília</td>
-                    <td>7719</td>
-                    <td>producao@softhair.com.br</td>
-                    <td>Produção</td>
-                </tr>
-                <tr>
-                    <td>Lívia Rodrigues</td>
-                    <td>7753</td>
-                    <td>livia@softhair.com.br</td>
-                    <td>Qualidade</td>
-                </tr>
-                <tr>
-                    <td>Poliane Fortunato</td>
-                    <td>7723</td>
-                    <td>qualidade2@softhair.com.br</td>
-                    <td>Qualidade</td>
-                </tr>
-                <tr>
-                    <td>Sindy</td>
-                    <td>7754</td>
-                    <td>qualidade@softhair.com.br</td>
-                    <td>Qualidade</td>
-                </tr>
-                <tr>
-                    <td>Samuel / Camila</td>
-                    <td>3582-6999</td>
-                    <td>cd@softhair.com.br</td>
-                    <td>CD</td>
-                </tr>
-                <tr>
-                    <td>Maria José</td>
-                    <td>2510-2336</td>
-                    <td>embalagensfilial@softhair.com.br</td>
-                    <td>Além Paraíba 467</td>
-                </tr>
-                <tr>
-                    <td>Bárbara</td>
-                    <td>(31) 97589-1166</td>
-                    <td>vitrine.distrib@gmail.com</td>
-                    <td>Vitrine DISTRIBUIDORA</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-
-@*REGRAS RAMAIS*@
-<section id="rgramais" class="reveal" style="background-color: darkgreen">
-    <div class="container-fluid text-white my-5 pb-5" style="padding-bottom:75px">
-        <div class="py-5 fw-bolder text-center d-block align-content-center justify-content-center">
-            <h2 class="tt">
-                Regras do Telefone
-            </h2>
-        </div>
-
-        <div class="container  py-5 rounded-5" style="background-color: #e6b700">
-            <div class="text-center mb-5">
-                Siga estas <strong>instruções</strong> para usar corretamente o <strong>
-                    sistema telefônico
-                    interno
-                </strong>
-            </div>
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-center">TRANSFERIR LIGAÇÕES</h5>
-                    <hr>
-                    <div class="text-center">
-                        Disque: <strong>FLASH</strong> + ramal desejado.<br>
-                        Para Transferir Ligações.
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-center">INTERURBANAS FIXO</h5>
-                    <hr>
-                    <div class="text-center">
-                        Disque: <strong>0 + DDD + número</strong>.<br>
-                        Não use código de operadora.
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-center">INTERURBANAS CELULAR</h5>
-                    <hr>
-                    <div class="text-center">
-                        Disque: <strong>021 + DDD + número</strong>.<br>
-                        Utilize a operadora <strong>Claro</strong>.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-@*SOLICITAÇÃO DE INSUMOS ESCRITÓRIOS*@
-@*<section id="solicitacoes" class="reveal">
-    <div class="container-fluid text-white my-5 pb-5" style="padding-bottom:75px">
-        <div class="py-5 fw-bolder text-center d-block align-content-center justify-content-center">
-            <h2 class="tt4">
-                Solicitações
-            </h2>
-        </div>
-        <div class="container  py-5 rounded-5" style="background-color:purple">
-            <div class="text-center mb-5">
-                <strong> Preencha o formulário abaixo para enviar sua solicitação ao setor responsável </strong>
+    @*INSTITUCIONAL*@
+    <section id="regras" class="reveal" style="background-color: darkgreen">
+        <div class="container-fluid text-white my-5" style="padding-bottom:75px;">
+            <div class="py-5 fw-bolder text-center">
+                <h2 class="tt">
+                    Institucional
+                </h2>
             </div>
 
-            <form action="https://formsubmit.co/criacao@softhair.com.br"
-                  method="POST">
-
-
-                <div class="container">
-
-                    <div class="row justify-content-center">
-
-                        <div class="col-lg-7">
-
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    Nome
-                                </label>
-                                <input type="text"
-                                       class="form-control"
-                                       name="nome"
-                                       placeholder="Digite seu nome"
-                                       required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">
-                                    Setor
-                                </label>
-                                <input type="text"
-                                       class="form-control"
-                                       name="Setor"
-                                       placeholder="Digite seu setor"
-                                       required>
-                            </div>
-
-                            <div class="mb-4">
-                                <label class="form-label">
-                                    Solicitação
-                                </label>
-                                <textarea class="form-control"
-                                          name="solicitacao"
-                                          rows="5"
-                                          placeholder="Digite sua solicitação"
-                                          required></textarea>
-                            </div>
-
-                            <div class="d-flex justify-content-center mt-4">
-                                <button type="submit"
-                                        class="btn btn-dark w-50 py-3">
-                                    Enviar solicitação
-                                </button>
-                            </div>
-
+            <div class="container py-5 rounded-5" style="background-color: #e6b700">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <strong>Respeite as diferenças</strong> e colabore para a boa
+                        <strong>convivência e harmonia</strong> no ambiente de trabalho.
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-center">
+                            TOM DE VOZ
+                        </h5>
+                        <hr />
+                        <div class="text-center">
+                            <strong>Cuidado</strong> para não atrapalhar quem esta proximo a você.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-center">
+                            SEJA ECOLÓGICO
+                        </h5>
+                        <hr />
+                        <div class="text-center">
+                            Pratique os 3 Rs: <br>
+                            <strong>Reduza, Reutilize e Recicle.</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-center">
+                            AMBIENTE LOCAL
+                        </h5>
+                        <hr />
+                        <div class="text-center">
+                            Um espaço organizado aumenta a, <strong>produtividade e o bem-estar</strong> diario.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-center">
+                            RECADOS DO SETOR
+                        </h5>
+                        <hr />
+                        <div class="text-center">
+                            <strong>Seja gentil</strong>, anote o recado <strong>passe para o responsavel</strong>
+                            assim que possível.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-center">
+                            LOCAL DE TRABALHO
+                        </h5>
+                        <hr />
+                        <div class="text-center">
+                            <strong>Não comente</strong> fofocas e <strong>não crie</strong> ou espalhe boatos no Ambiente de trabalho.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-center">
+                            ENTRE RAMAIS
+                        </h5>
+                        <hr />
+                        <div class="text-center">
+                            Não insista em uma ligação caso ramal esteja ocupado, <strong>tente mais tarde.</strong>
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
-    </div>
-</section>*@
+
+    </section>
+
+    @*ESCALA DO ALMOCO*@
+    <section id="horario" class="reveal">
+        <div class="py-5 text-center">
+            <h2 class="tt">
+                Horário de Almoço
+            </h2>
+        </div>
+        <div class="container table-responsive rounded-3 bg-white w-75">
+            <div class="pt-3">
+                <table class="hours table table-striped table-hover display">
+                    <thead style="background-color: slateblue; color: white;" ead>
+                        <tr>
+                            <th style="background-color: slateblue; color: white;" colspan="5" class="text-center">
+                                COZINHA
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="background-color: slateblue; color: white;">11h30min</th>
+                            <th style="background-color: slateblue; color: white;">12h00min</th>
+                            <th style="background-color: slateblue; color: white;">12h30min</th>
+                            <th style="background-color: slateblue; color: white;">13h00min</th>
+                            <th style="background-color: slateblue; color: white;">13h30min</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gerald</td>
+                            <td>Berenice</td>
+                            <td>Nancy</td>
+                            <td>Fagner</td>
+                            <td>Tati</td>
+                        </tr>
+                        <tr>
+                            <td>Felipe</td>
+                            <td>Tininha</td>
+                            <td>Andreza</td>
+                            <td>Deivid</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Crimarcia</td>
+                            <td>Luana</td>
+                            <td>Pedro</td>
+                            <td>Dani</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Adila</td>
+                            <td>Victor</td>
+                            <td>Lorrayne</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Diego</td>
+                            <td>Natã</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pt-5">
+                <table class="hours table table-striped table-hover py-5 display">
+                    <thead style="background-color: slateblue; color: white;" ead>
+                        <tr>
+                            <th style="background-color: slateblue; color: white;" colspan="5" class="text-center">
+                                REFEITÓRIO 1º PISO
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="background-color: slateblue; color: white;">12h00</th>
+                            <th style="background-color: slateblue; color: white;">12h30</th>
+                            <th style="background-color: slateblue; color: white;">13h00min</th>
+                            <th style="background-color: slateblue; color: white;">13h15min</th>
+                            <th style="background-color: slateblue; color: white;">13h30min</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Karoline (Jurídico)</td>
+                            <td>João</td>
+                            <td></td>
+                            <td>Luiz (TI)</td>
+                            <td>Paula</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Camila(MKT)</td>
+                            <td>Luiz (MKT)</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Livia</td>
+                            <td>Izabela(Fiscal)</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Thalyta</td>
+                            <td>Aline</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Isadora Mirella</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    @*LANCAMENTOS*@
+    <section id="lancamentos" class="reveal" style="background-color: darkgreen">
+        <div class="container-fluid my-5 pb-5">
+            <div class="pt-5 fw-bolder text-center">
+                <h2 class="tt">Lançamentos</h2>
+            </div>
+            <div class="container pb-5 rounded-5" style="background-color: #e6b700">
+                <div class="row mt-5 pt-4">
+                    <div class=" col-md-6 col-lg-3 text-center align-content-end">
+                        <img src="~/Content/img/lisa_pe.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
+                        <div class="card-body py-3">
+                            <h5 class="card-title text-center tt" style="color:white;">Lisa Pé 10% Ureia</h5>
+                        </div>
+                    </div>
+
+                    <div class=" col-md-6 col-lg-3 text-center align-content-end">
+                        <img src="~/Content/img/gelatina_maracuja.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
+                        <div class="card-body py-3">
+                            <h5 class="card-title text-center tt" style="color:white;">Gelatina Maracujá</h5>
+                        </div>
+                    </div>
+
+                    <div class=" col-md-6 col-lg-3 text-center align-content-end">
+                        <img src="~/Content/img/luva_de_silicone.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
+                        <div class="card-body py-3">
+                            <h5 class="card-title text-center tt" style="color:white;">Lisa Luva de Silicone</h5>
+                        </div>
+                    </div>
+
+                    <div class=" col-md-6 col-lg-3 text-center align-content-end">
+                        <img src="~/Content/img/spray_clareador.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
+                        <div class="card-body py-3">
+                            <h5 class="card-title text-center tt" style="color:white;">Sprays Clareadores</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    @*RAMAIS*@
+    <section id="ramais" class="reveal">
+        <div class="py-5 fw-bolder text-center">
+            <h2 class="tt">
+                Ramais
+            </h2>
+        </div>
+
+        <div class="container table-responsive rounded-3 bg-white w-75">
+            <table id="ramal" class="table table-striped table-hover display">
+                <thead>
+                    <tr>
+                        <th style="background-color:purple; color: white;">Nome</th>
+                        <th style="background-color:purple; color: white;">Ramal</th>
+                        <th style="background-color:purple; color: white;">Email</th>
+                        <th style="background-color:purple; color: white;">Departamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rodrigo Rocha</td>
+                        <td>7711</td>
+                        <td>rodrigo@softhair.com.br</td>
+                        <td>Diretor</td>
+                    </tr>
+                    <tr>
+                        <td>Berenice</td>
+                        <td>7700</td>
+                        <td>recepcao@softair.com.br</td>
+                        <td>Recepção</td>
+                    </tr>
+                    <tr>
+                        <td>Livia Carvalho</td>
+                        <td>7706</td>
+                        <td>promocoes@softhair.com.br</td>
+                        <td>Merchandising</td>
+                    </tr>
+                    <tr>
+                        <td>Elisangela França</td>
+                        <td>7763</td>
+                        <td>compras2@softhair.com.br</td>
+                        <td>Compras</td>
+                    </tr>
+                    <tr>
+                        <td>Talyta Cristyellem</td>
+                        <td>7747</td>
+                        <td>promocoes2@softhair.com.br</td>
+                        <td>Merchandising</td>
+                    </tr>
+                    <tr>
+                        <td>Deivid Rodrigues</td>
+                        <td>7742</td>
+                        <td>promocoes1@softhair.com.br</td>
+                        <td>Trade Marketing</td>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo de Sousa</td>
+                        <td>7714</td>
+                        <td>rodsousa@softhair.com.br</td>
+                        <td>Comercial</td>
+                    </tr>
+                    <tr>
+                        <td>Paula Mendes</td>
+                        <td>7707</td>
+                        <td>comercial6@softhair.com.br</td>
+                        <td>Comercial</td>
+                    </tr>
+                    <tr>
+                        <td>Isadora Mirella</td>
+                        <td>7733</td>
+                        <td>comercial2@softhair.com.br</td>
+                        <td>Comercial</td>
+                    </tr>
+                    <tr>
+                        <td>João Victor</td>
+                        <td>7762</td>
+                        <td>comercial@softhair.com.br</td>
+                        <td>Comercial</td>
+                    </tr>
+                    <tr>
+                        <td>Gerald Dias</td>
+                        <td>7761</td>
+                        <td>comercial3@softhair.com.br</td>
+                        <td>Comercial</td>
+                    </tr>
+                    <tr>
+                        <td>Felipe Vieira</td>
+                        <td>7736</td>
+                        <td>comercial1@softhair.com.br</td>
+                        <td>Comercial</td>
+                    </tr>
+                    <tr>
+                        <td>Tatiane Franco</td>
+                        <td>7737</td>
+                        <td>comercialpedidos@softhair.com.br</td>
+                        <td>Comercial</td>
+                    </tr>
+                    <tr>
+                        <td>Rafael Rocha</td>
+                        <td>-</td>
+                        <td>rafael@softhair.com.br</td>
+                        <td>Gerência Comercial</td>
+                    </tr>
+                    <tr>
+                        <td>André Borges</td>
+                        <td>-</td>
+                        <td>andreborges@softhair.com.br</td>
+                        <td>Gerência Comercial</td>
+                    </tr>
+                    <tr>
+                        <td>Tininha</td>
+                        <td>7746</td>
+                        <td>pessoal1@softhair.com.br</td>
+                        <td>RH</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro Ivo</td>
+                        <td>7751</td>
+                        <td>criacao@softhair.com.br</td>
+                        <td>Marketing</td>
+                    </tr>
+                    <tr>
+                        <td>Luana Alves</td>
+                        <td>7728</td>
+                        <td>luana.alves@softhair.com.br</td>
+                        <td>Marketing</td>
+                    </tr>
+                    <tr>
+                        <td>Camilla Clemence</td>
+                        <td>7729</td>
+                        <td>camilla.clemence@softhair.com.br</td>
+                        <td>Marketing</td>
+                    </tr>
+                    <tr>
+                        <td>Natã Durães</td>
+                        <td>7756</td>
+                        <td>publicidade3@softhair.com.br</td>
+                        <td>Marketing</td>
+                    </tr>
+                    <tr>
+                        <td>Luiz Gustavo</td>
+                        <td>-</td>
+                        <td>publicidade2@softhair.com.br</td>
+                        <td>Marketing</td>
+                    </tr>
+                    <tr>
+                        <td>Lorrayne Braga</td>
+                        <td>7708</td>
+                        <td>loja@softhair.com.br</td>
+                        <td>E-Commerce</td>
+                    </tr>
+                    <tr>
+                        <td>Alana Lemos</td>
+                        <td>7721</td>
+                        <td>laboratorio2@softhair.com.br</td>
+                        <td>Desenvolvimento</td>
+                    </tr>
+                    <tr>
+                        <td>Silvânia Maria</td>
+                        <td>-</td>
+                        <td>silvania@softhair.com.br</td>
+                        <td>Financeiro / Fiscal</td>
+                    </tr>
+                    <tr>
+                        <td>Ádila Ribeiro</td>
+                        <td>7752</td>
+                        <td>financeiro4@softhair.com.br</td>
+                        <td>Financeiro / Fiscal</td>
+                    </tr>
+                    <tr>
+                        <td>Renato</td>
+                        <td>7704</td>
+                        <td>fiscal@softhair.com.br</td>
+                        <td>Financeiro / Fiscal</td>
+                    </tr>
+                    <tr>
+                        <td>Danielle Stefânia</td>
+                        <td>7705</td>
+                        <td>financeiro1@softhair.com.br</td>
+                        <td>Financeiro / Fiscal</td>
+                    </tr>
+                    <tr>
+                        <td>Crimácia Oliveira</td>
+                        <td>7713</td>
+                        <td>faturamento@softhair.com.br</td>
+                        <td>Financeiro / Fiscal</td>
+                    </tr>
+                    <tr>
+                        <td>Nancy</td>
+                        <td>7720</td>
+                        <td>financeiro5@softhair.com.br</td>
+                        <td>Financeiro / Fiscal</td>
+                    </tr>
+                    <tr>
+                        <td>Letícia Rodrigues</td>
+                        <td>7701</td>
+                        <td>leticia@softhair.com.br</td>
+                        <td>Jurídico</td>
+                    </tr>
+                    <tr>
+                        <td>Andreza Domenicci</td>
+                        <td>7722</td>
+                        <td>andreza@softhair.com.br</td>
+                        <td>Jurídico</td>
+                    </tr>
+                    <tr>
+                        <td>Aline Moreira</td>
+                        <td>7731</td>
+                        <td>juridico2@softhair.com.br</td>
+                        <td>Jurídico</td>
+                    </tr>
+                    <tr>
+                        <td>Karoline Oliveira</td>
+                        <td>7739</td>
+                        <td>juridico1@softhair.com.br</td>
+                        <td>Jurídico</td>
+                    </tr>
+                    <tr>
+                        <td>Victor César</td>
+                        <td>7757</td>
+                        <td>juridico3@softhair.com.br</td>
+                        <td>Jurídico</td>
+                    </tr>
+                    <tr>
+                        <td>Luiz Guilherme</td>
+                        <td>7727</td>
+                        <td>cpd@softhair.com.br</td>
+                        <td>TI</td>
+                    </tr>
+                    <tr>
+                        <td>Fagner Miguel</td>
+                        <td>7749</td>
+                        <td>sistemas@softhair.com.br</td>
+                        <td>TI</td>
+                    </tr>
+                    <tr>
+                        <td>Denise Vasconcelos</td>
+                        <td>7755</td>
+                        <td>laboratorio@softhair.com.br</td>
+                        <td>Suprimentos</td>
+                    </tr>
+                    <tr>
+                        <td>Diego Madureira</td>
+                        <td>7718</td>
+                        <td>transportes@softhair.com.br</td>
+                        <td>Logística / Transportes</td>
+                    </tr>
+                    <tr>
+                        <td>Antônio Sérgio</td>
+                        <td>7717</td>
+                        <td>sergio@softhair.com.br</td>
+                        <td>Logística / Transportes</td>
+                    </tr>
+                    <tr>
+                        <td>Josiane Braga</td>
+                        <td>7721</td>
+                        <td>josiane@softhair.com.br</td>
+                        <td>Laboratório</td>
+                    </tr>
+                    <tr>
+                        <td>Michelle</td>
+                        <td>7735</td>
+                        <td>garantiaq3@softhair.com.br</td>
+                        <td>Laboratório</td>
+                    </tr>
+                    <tr>
+                        <td>Anna Karla</td>
+                        <td>7741</td>
+                        <td>industrial@softhair.com.br</td>
+                        <td>Laboratório</td>
+                    </tr>
+                    <tr>
+                        <td>Fernanda / Cida</td>
+                        <td>7741</td>
+                        <td>controleq4@softhair.com.br</td>
+                        <td>Laboratório</td>
+                    </tr>
+                    <tr>
+                        <td>Cecília</td>
+                        <td>7719</td>
+                        <td>producao@softhair.com.br</td>
+                        <td>Produção</td>
+                    </tr>
+                    <tr>
+                        <td>Lívia Rodrigues</td>
+                        <td>7753</td>
+                        <td>livia@softhair.com.br</td>
+                        <td>Qualidade</td>
+                    </tr>
+                    <tr>
+                        <td>Poliane Fortunato</td>
+                        <td>7723</td>
+                        <td>qualidade2@softhair.com.br</td>
+                        <td>Qualidade</td>
+                    </tr>
+                    <tr>
+                        <td>Sindy</td>
+                        <td>7754</td>
+                        <td>qualidade@softhair.com.br</td>
+                        <td>Qualidade</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel / Camila</td>
+                        <td>3582-6999</td>
+                        <td>cd@softhair.com.br</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td>Maria José</td>
+                        <td>2510-2336</td>
+                        <td>embalagensfilial@softhair.com.br</td>
+                        <td>Além Paraíba 467</td>
+                    </tr>
+                    <tr>
+                        <td>Bárbara</td>
+                        <td>(31) 97589-1166</td>
+                        <td>vitrine.distrib@gmail.com</td>
+                        <td>Vitrine DISTRIBUIDORA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    @*REGRAS RAMAIS*@
+    <section id="rgramais" class="reveal" style="background-color: darkgreen">
+        <div class="container-fluid text-white my-5 pb-5" style="padding-bottom:75px">
+            <div class="py-5 fw-bolder text-center d-block align-content-center justify-content-center">
+                <h2 class="tt">
+                    Regras do Telefone
+                </h2>
+            </div>
+
+            <div class="container  py-5 rounded-5" style="background-color: #e6b700">
+                <div class="text-center mb-5">
+                    Siga estas <strong>instruções</strong> para usar corretamente o <strong>
+                        sistema telefônico
+                        interno
+                    </strong>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-center">TRANSFERIR LIGAÇÕES</h5>
+                        <hr>
+                        <div class="text-center">
+                            Disque: <strong>FLASH</strong> + ramal desejado.<br>
+                            Para Transferir Ligações.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-center">INTERURBANAS FIXO</h5>
+                        <hr>
+                        <div class="text-center">
+                            Disque: <strong>0 + DDD + número</strong>.<br>
+                            Não use código de operadora.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-center">INTERURBANAS CELULAR</h5>
+                        <hr>
+                        <div class="text-center">
+                            Disque: <strong>021 + DDD + número</strong>.<br>
+                            Utilize a operadora <strong>Claro</strong>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @*SOLICITAÇÃO DE INSUMOS ESCRITÓRIOS*@
+    @*<section id="solicitacoes" class="reveal">
+            <div class="container-fluid text-white my-5 pb-5" style="padding-bottom:75px">
+                <div class="py-5 fw-bolder text-center d-block align-content-center justify-content-center">
+                    <h2 class="tt4">
+                        Solicitações
+                    </h2>
+                </div>
+                <div class="container  py-5 rounded-5" style="background-color:purple">
+                    <div class="text-center mb-5">
+                        <strong> Preencha o formulário abaixo para enviar sua solicitação ao setor responsável </strong>
+                    </div>
+
+                    <form action="https://formsubmit.co/criacao@softhair.com.br"
+                          method="POST">
+
+
+                        <div class="container">
+
+                            <div class="row justify-content-center">
+
+                                <div class="col-lg-7">
+
+                                    <div class="mb-3">
+                                        <label class="form-label">
+                                            Nome
+                                        </label>
+                                        <input type="text"
+                                               class="form-control"
+                                               name="nome"
+                                               placeholder="Digite seu nome"
+                                               required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">
+                                            Setor
+                                        </label>
+                                        <input type="text"
+                                               class="form-control"
+                                               name="Setor"
+                                               placeholder="Digite seu setor"
+                                               required>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label">
+                                            Solicitação
+                                        </label>
+                                        <textarea class="form-control"
+                                                  name="solicitacao"
+                                                  rows="5"
+                                                  placeholder="Digite sua solicitação"
+                                                  required></textarea>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <button type="submit"
+                                                class="btn btn-dark w-50 py-3">
+                                            Enviar solicitação
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>*@
 

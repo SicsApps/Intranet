@@ -58,14 +58,14 @@ new DataTable('#gym', {
 //VAI MOSTRAR OS GINASTAS DO MES
 $(document).ready(function () {
     let hoje = new Date();
-    let dia = hoje.getDate();
-    let mes = hoje.getMonth() + 1;
+    hoje.setHours(0, 0, 0, 0);
 
     $('#gym tbody tr').each(function () {
         let dataGym = $('td', this).eq(0).text().trim();
-        let [diaGym, mesGym] = dataGym.split('/').map(Number);
+        let [diaGym, mesGym, anoGym] = dataGym.split('/').map(Number);
+        let dataLinha = new Date(anoGym, mesGym - 1, diaGym);
 
-        if (diaGym >= dia) {
+        if (dataLinha >= hoje) {
             $(this).show();
         } else {
             $(this).hide();

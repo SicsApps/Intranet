@@ -176,6 +176,9 @@
     <Content Include="Content\img\2ec.jpg" />
     <Content Include="Content\img\2en.jpg" />
     <Content Include="Content\img\3ec.jpg" />
+    <Content Include="Content\img\albumpag1.png" />
+    <Content Include="Content\img\albumpag2.png" />
+    <Content Include="Content\img\albumpag3.png" />
     <Content Include="Content\img\avisomod.png" />
     <Content Include="Content\img\back.png" />
     <Content Include="Content\img\baner dia do trabalhador.png" />
