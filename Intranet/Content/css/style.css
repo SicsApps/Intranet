@@ -107,8 +107,8 @@ section {
 
 /* TITULOS */
 .tt {
-    background-color: darkblue;
-    color: white;
+    background-color: white;
+    color: purple;
     border-radius: 15px 0;
     padding: 5px 15px;
     display: inline-block;
@@ -143,29 +143,3 @@ section {
     background-color: white;    
 }
 
-/* CONTADOR COPA DO MUNDO */
-.contador-copa {
-    font-size: 12px;
-    background: #006847;
-    color: #fff;
-    padding: 5px 25px;
-    border-radius: 10px;
-        /*transform: scale(0.7)*/
-}
-
-#contador span {
-    color: #FFDF00;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.navbar-copa img {
-    max-width: 500px;
-    width: auto;
-    height: auto;
-}
-
-h6 {
-    font-size: 15px;
-    font-weight: bold;
-}

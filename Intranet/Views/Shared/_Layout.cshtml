@@ -32,7 +32,7 @@
 
 
     @*NAVBAR*@
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom_nav-container w-100 fw-medium text-uppercase">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom_nav-container w-100 fw-medium text-uppercase ">
         <div class="container-fluid">
 
             <!-- Logo -->
@@ -40,47 +40,7 @@
                 <img class="rounded-1" src="~/Content/img/softHairBranca.png" alt="Logo soft">
             </a>
 
-            <a class="navbar-brand" href="#home">
-                <div class="contador-copa">
-                    <h6>Copa do Mundo 2026</h6>
 
-                    <div id="contador">
-                        <div class="text-center">
-                            <span id="dias">00</span>d
-                            <span id="horas">00</span>h
-                            <span id="minutos">00</span>min
-                            <span id="segundos">00</span>s
-                        </div>
-                    </div>
-                </div>
-
-                <script>
-                    // Abertura: 11/06/2026 às 13:00 no México
-                    // Equivale a 16:00 no horário de Brasília
-                    const dataAbertura = new Date("2026-06-11T16:00:00-03:00").getTime();
-
-                    const intervalo = setInterval(function () {
-                        const agora = new Date().getTime();
-                        const distancia = dataAbertura - agora;
-
-                        if (distancia <= 0) {
-                            clearInterval(intervalo);
-                            document.getElementById("contador").innerHTML = "A Copa começou!";
-                            return;
-                        }
-
-                        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-                        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-                        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-                        document.getElementById("dias").innerText = dias;
-                        document.getElementById("horas").innerText = horas.toString().padStart(2, "0");
-                        document.getElementById("minutos").innerText = minutos.toString().padStart(2, "0");
-                        document.getElementById("segundos").innerText = segundos.toString().padStart(2, "0");
-                    }, 1000);
-                </script>
-            </a>
             <!-- Botão mobile -->
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse"

@@ -1,39 +1,24 @@
 ﻿@*BANNER*@
 <header>
-   @* <div class="container">
-        <img src="~/Content/img/albumpag1.png" alt="" class="img-fluid d-none d-sm-block">
-    </div>*@
-
-
-
     <div class="container">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="~/Content/img/albumpag1.png" class="d-block w-100" alt="~/Content/img/albumpag2.png">
-                </div>
-                <div class="carousel-item">
-                    <img src="~/Content/img/albumpag2.png" class="d-block w-100" alt="~/Content/img/albumpag3.png">
-                </div>
-                <div class="carousel-item">
-                    <img src="~/Content/img/albumpag3.png" class="d-block w-100" alt="~/Content/img/albumpag1.png">
-                </div>
-            </div>
-            <div class="carousel-indicators"> 
-                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-        </div>
+        <img src="~/Content/img/Banner_Intranet.png" alt="" class="img-fluid d-none d-sm-block">
     </div>
 </header>
 
  @*MODAIS AVISOS BOLOTAS*@
-    <section id="avisos" style="background-color:darkgreen">
-        <div class="container-fluid my-5 pb-5">
+    <section id="avisos" style="background-color:purple">
+        <div class="container-fluid my-5 pb-5" @*style="background:url(/Content/img/back1.png)*@> 
             <div class="py-5 fw-bolder text-center">
                 <h2 class="tt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z" />
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                    </svg>
                     Avisos
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z" />
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                    </svg>
                 </h2>
             </div>
             <div class="text-center text-white">
@@ -229,69 +214,104 @@
     @*ANIVERSARIANTES*@
     <section id="aniversariantes" class="reveal">
         <div class="py-5 fw-bolder text-center">
-            <h2 class="tt">
+            <h2 class="tt2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cake2" viewBox="0 0 16 16">
+                    <path d="m3.494.013-.595.79A.747.747 0 0 0 3 1.814v2.683q-.224.051-.432.107c-.702.187-1.305.418-1.745.696C.408 5.56 0 5.954 0 6.5v7c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 15.773 5.898 16 8 16s4.022-.227 5.432-.603c.701-.187 1.305-.418 1.745-.696.415-.261.823-.655.823-1.201v-7c0-.546-.408-.94-.823-1.201-.44-.278-1.043-.51-1.745-.696A12 12 0 0 0 13 4.496v-2.69a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 12 1.813V4.3a22 22 0 0 0-2-.23V1.806a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v2.204a29 29 0 0 0-2 0V1.806A.747.747 0 0 0 7.092.802l-.598-.79-.595.792A.747.747 0 0 0 6 1.813V4.07c-.71.05-1.383.129-2 .23V1.806A.747.747 0 0 0 4.092.802zm-.668 5.556L3 5.524v.967q.468.111 1 .201V5.315a21 21 0 0 1 2-.242v1.855q.488.036 1 .054V5.018a28 28 0 0 1 2 0v1.964q.512-.018 1-.054V5.073c.72.054 1.393.137 2 .242v1.377q.532-.09 1-.201v-.967l.175.045c.655.175 1.15.374 1.469.575.344.217.356.35.356.356s-.012.139-.356.356c-.319.2-.814.4-1.47.575C11.87 7.78 10.041 8 8 8c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 6.639 1 6.506 1 6.5s.012-.139.356-.356c.319-.2.814-.4 1.47-.575M15 7.806v1.027l-.68.907a.94.94 0 0 1-1.17.276 1.94 1.94 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82V7.806c.42.232.956.428 1.568.591C3.978 8.773 5.898 9 8 9s4.022-.227 5.432-.603c.612-.163 1.149-.36 1.568-.591m0 2.679V13.5c0 .006-.012.139-.356.355-.319.202-.814.401-1.47.576C11.87 14.78 10.041 15 8 15c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575-.344-.217-.356-.35-.356-.356v-3.02a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.94.94 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426" />
+                </svg>
                 Aniversariantes
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cake2" viewBox="0 0 16 16">
+                    <path d="m3.494.013-.595.79A.747.747 0 0 0 3 1.814v2.683q-.224.051-.432.107c-.702.187-1.305.418-1.745.696C.408 5.56 0 5.954 0 6.5v7c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 15.773 5.898 16 8 16s4.022-.227 5.432-.603c.701-.187 1.305-.418 1.745-.696.415-.261.823-.655.823-1.201v-7c0-.546-.408-.94-.823-1.201-.44-.278-1.043-.51-1.745-.696A12 12 0 0 0 13 4.496v-2.69a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 12 1.813V4.3a22 22 0 0 0-2-.23V1.806a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v2.204a29 29 0 0 0-2 0V1.806A.747.747 0 0 0 7.092.802l-.598-.79-.595.792A.747.747 0 0 0 6 1.813V4.07c-.71.05-1.383.129-2 .23V1.806A.747.747 0 0 0 4.092.802zm-.668 5.556L3 5.524v.967q.468.111 1 .201V5.315a21 21 0 0 1 2-.242v1.855q.488.036 1 .054V5.018a28 28 0 0 1 2 0v1.964q.512-.018 1-.054V5.073c.72.054 1.393.137 2 .242v1.377q.532-.09 1-.201v-.967l.175.045c.655.175 1.15.374 1.469.575.344.217.356.35.356.356s-.012.139-.356.356c-.319.2-.814.4-1.47.575C11.87 7.78 10.041 8 8 8c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 6.639 1 6.506 1 6.5s.012-.139.356-.356c.319-.2.814-.4 1.47-.575M15 7.806v1.027l-.68.907a.94.94 0 0 1-1.17.276 1.94 1.94 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82V7.806c.42.232.956.428 1.568.591C3.978 8.773 5.898 9 8 9s4.022-.227 5.432-.603c.612-.163 1.149-.36 1.568-.591m0 2.679V13.5c0 .006-.012.139-.356.355-.319.202-.814.401-1.47.576C11.87 14.78 10.041 15 8 15c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575-.344-.217-.356-.35-.356-.356v-3.02a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.94.94 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426" />
+                </svg>
             </h2>
+
         </div>
         <div class="container table-responsive rounded-3 bg-white w-75">
             <table id="niver" class="table table-striped table-hover display">
                 <thead style="background-color: slateblue; color: white;" ead>
                     <tr>
-                        <th style="background-color: slateblue; color: white;">Nome</th>
-                        <th style="background-color: slateblue; color: white;">Data</th>
-                        <th style="background-color: slateblue; color: white;">Departamento</th>
+                        <th style="background-color: #d30382; color: white;">Nome</th>
+                        <th style="background-color: #d30382; color: white; ">Data</th>
+                        <th style="background-color: #d30382; color: white; ">Departamento</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Crislaine Batista</td>
-                        <td>06/06/2026</td>
+                        <td>Lucelene Santos</td>
+                        <td>03/07/2026</td>
                         <td>Produção</td>
                     </tr>
                     <tr>
-                        <td>Lucinea Mota</td>
-                        <td>14/06/2026</td>
+                        <td>Carlos Alberto Athayde</td>
+                        <td>08/07/2026</td>
                         <td>Produção</td>
                     </tr>
                     <tr>
-                        <td>Wanessa Cristina</td>
-                        <td>17/06/2026</td>
+                        <td>Luzineide Santana</td>
+                        <td>08/07/2026</td>
                         <td>Produção</td>
                     </tr>
                     <tr>
-                        <td>Angelica Mariana</td>
-                        <td>21/06/2026</td>
+                        <td>Evanilda da Purificação</td>
+                        <td>16/07/2026</td>
                         <td>Produção</td>
                     </tr>
                     <tr>
-                        <td>João Paulo</td>
-                        <td>25/06/2026</td>
+                        <td>Guilherme Marinho</td>
+                        <td>25/07/2026</td>
                         <td>Produção</td>
                     </tr>
                     <tr>
-                        <td>Antonio Sérgio</td>
-                        <td>29/06/2026</td>
+                        <td>Glaucia Martins</td>
+                        <td>25/07/2026</td>
                         <td>Produção</td>
                     </tr>
                     <tr>
-                        <td>Berenice Longuinhos</td>
-                        <td>03/06/2026</td>
+                        <td>Larissa Barbosa</td>
+                        <td>29/07/2026</td>
+                        <td>Produção</td>
+                    </tr>
+
+                    <tr>
+                        <td>Renato Henrique</td>
+                        <td>02/07/2026</td>
                         <td>Administrativo</td>
                     </tr>
                     <tr>
-                        <td>Rafael Rocha</td>
-                        <td>16/06/2026</td>
+                        <td>Pedro Ivo</td>
+                        <td>16/07/2026</td>
                         <td>Administrativo</td>
                     </tr>
                     <tr>
-                        <td>Lorrayane Almeida</td>
-                        <td>18/06/2026</td>
+                        <td>Tatiane Pinto</td>
+                        <td>21/07/2026</td>
                         <td>Administrativo</td>
                     </tr>
                     <tr>
-                        <td>Guilherme Anisio</td>
-                        <td>23/06/2026</td>
-                        <td>CD</td>
+                        <td>Gisele Vitoria</td>
+                        <td>22/07/2026</td>
+                        <td>Administrativo</td>
+                    </tr>
+                    <tr>
+                        <td>Denise Vasconcelos</td>
+                        <td>28/07/2026</td>
+                        <td>Administrativo</td>
+                    </tr>
+                    <tr>
+                        <td>Tininha</td>
+                        <td>28/07/2026</td>
+                        <td>Administrativo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Valdimir Soares</td>
+                        <td>29/07/2026</td>
+                        <td>Vitrine</td>
+                    </tr>
+
+                    <tr>
+                        <td>Samuel Gustavo</td>
+                        <td>21/07/2026</td>
+                        <td>Visão</td>
                     </tr>
                 </tbody>
             </table>
@@ -299,10 +319,20 @@
     </section>
 
     @*CALENDARIO*@
-    <section id="calendario" class="reveal" style="background-color: darkgreen">
-        <div class="container-fluid my-5 pb-5" @*style="background:url(/Content/img/back.png)"*@>
+    <section id="calendario" class="reveal" style="background-color: #340934">
+        <div class="container-fluid my-5 pb-5">
             <div class="fw-bolder text-center py-5">
-                <h2 class="tt">Calendário</h2>
+                <h2 class="tt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-calendar2-week" viewBox="0 0 16 16">
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                        <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    Calendário
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-calendar2-week" viewBox="0 0 16 16">
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                        <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </h2>
             </div>
             <div class="container rounded-5 bg-white w-75 text-center">
                 <div class="row">
@@ -321,16 +351,24 @@
     @*GINASTICA*@
     <section id="ginastica" class="reveal">
         <div class="py-5 fw-bolder text-center">
-            <h2 class="tt">
+            <h2 class="tt2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-pulse" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857q.09.083.176.171a3 3 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01zM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5" />
+                    <path d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162z" />
+                </svg>
                 Ginástica
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-pulse" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857q.09.083.176.171a3 3 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01zM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5" />
+                    <path d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162z" />
+                </svg>
             </h2>
         </div>
         <div class="container table-responsive rounded-3 bg-white w-75">
             <table id="gym" class="table table-striped table-hover display">
                 <thead style="background-color: slateblue; color: white;" ead>
                     <tr>
-                        <th style="background-color:purple; color: white;">Data</th>
-                        <th style="background-color:purple; color: white;">Nome</th>
+                        <th style="background-color: #d30382; color: white;">Data</th>
+                        <th style="background-color: #d30382; color: white;">Nome</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -432,16 +470,24 @@
     </section>
 
     @*INSTITUCIONAL*@
-    <section id="regras" class="reveal" style="background-color: darkgreen">
+    <section id="regras" class="reveal" style="background-color: purple">
         <div class="container-fluid text-white my-5" style="padding-bottom:75px;">
             <div class="py-5 fw-bolder text-center">
                 <h2 class="tt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+                        <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z" />
+                        <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z" />
+                    </svg>
                     Institucional
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+                        <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z" />
+                        <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z" />
+                    </svg>
                 </h2>
             </div>
 
-            <div class="container py-5 rounded-5" style="background-color: #e6b700">
-                <div class="col-12">
+            <div class="container py-5 rounded-5" style="background-color: #340934">
+                <div class="col-12 ">
                     <div class="text-center mb-5">
                         <strong>Respeite as diferenças</strong> e colabore para a boa
                         <strong>convivência e harmonia</strong> no ambiente de trabalho.
@@ -513,8 +559,14 @@
     @*ESCALA DO ALMOCO*@
     <section id="horario" class="reveal">
         <div class="py-5 text-center">
-            <h2 class="tt">
+            <h2 class="tt2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fork-knife" viewBox="0 0 16 16">
+                    <path d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z" />
+                </svg>
                 Horário de Almoço
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fork-knife" viewBox="0 0 16 16">
+                    <path d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z" />
+                </svg>
             </h2>
         </div>
         <div class="container table-responsive rounded-3 bg-white w-75">
@@ -522,16 +574,16 @@
                 <table class="hours table table-striped table-hover display">
                     <thead style="background-color: slateblue; color: white;" ead>
                         <tr>
-                            <th style="background-color: slateblue; color: white;" colspan="5" class="text-center">
+                            <th style="background-color: #d30382; color: white;" colspan="5" class="text-center">
                                 COZINHA
                             </th>
                         </tr>
                         <tr>
-                            <th style="background-color: slateblue; color: white;">11h30min</th>
-                            <th style="background-color: slateblue; color: white;">12h00min</th>
-                            <th style="background-color: slateblue; color: white;">12h30min</th>
-                            <th style="background-color: slateblue; color: white;">13h00min</th>
-                            <th style="background-color: slateblue; color: white;">13h30min</th>
+                            <th style="background-color: #f143a4; color: white;">11h30min</th>
+                            <th style="background-color: #f143a5; color: white; ">12h00min</th>
+                            <th style="background-color: #f143a5; color: white; ">12h30min</th>
+                            <th style="background-color: #f143a5; color: white; ">13h00min</th>
+                            <th style="background-color: #f143a5; color: white; ">13h30min</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -577,16 +629,16 @@
                 <table class="hours table table-striped table-hover py-5 display">
                     <thead style="background-color: slateblue; color: white;" ead>
                         <tr>
-                            <th style="background-color: slateblue; color: white;" colspan="5" class="text-center">
+                            <th style="background-color: #d30382; color: white; " colspan="5" class="text-center">
                                 REFEITÓRIO 1º PISO
                             </th>
                         </tr>
                         <tr>
-                            <th style="background-color: slateblue; color: white;">12h00</th>
-                            <th style="background-color: slateblue; color: white;">12h30</th>
-                            <th style="background-color: slateblue; color: white;">13h00min</th>
-                            <th style="background-color: slateblue; color: white;">13h15min</th>
-                            <th style="background-color: slateblue; color: white;">13h30min</th>
+                            <th style="background-color: #f143a4; color: white;">12h00</th>
+                            <th style="background-color: #f143a4; color: white;">12h30</th>
+                            <th style="background-color: #f143a4; color: white;">13h00min</th>
+                            <th style="background-color: #f143a4; color: white;">13h15min</th>
+                            <th style="background-color: #f143a4; color: white;">13h30min</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -632,38 +684,50 @@
     </section>
 
     @*LANCAMENTOS*@
-    <section id="lancamentos" class="reveal" style="background-color: darkgreen">
+    <section id="lancamentos" class="reveal" style="background-color: #340934">
         <div class="container-fluid my-5 pb-5">
             <div class="pt-5 fw-bolder text-center">
-                <h2 class="tt">Lançamentos</h2>
+                <h2 class="tt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16">
+                        <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                        <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                        <path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                    </svg>
+                    Lançamentos
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16">
+                        <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                        <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                        <path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                    </svg>
+                </h2>
             </div>
-            <div class="container pb-5 rounded-5" style="background-color: #e6b700">
+            <div class="container pb-5 rounded-5" style="background-color: purple">
                 <div class="row mt-5 pt-4">
                     <div class=" col-md-6 col-lg-3 text-center align-content-end">
-                        <img src="~/Content/img/lisa_pe.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
+                        <img src="~/Content/img/lisa_pe.png" class="img-fluid efeito-lan" alt="" style="max-width:50%;">
                         <div class="card-body py-3">
-                            <h5 class="card-title text-center tt" style="color:white;">Lisa Pé 10% Ureia</h5>
+                            <h5 class="card-title text-center tt" style="color:purple;">Lisa Pé 10% Ureia</h5>
                         </div>
                     </div>
 
                     <div class=" col-md-6 col-lg-3 text-center align-content-end">
                         <img src="~/Content/img/gelatina_maracuja.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
                         <div class="card-body py-3">
-                            <h5 class="card-title text-center tt" style="color:white;">Gelatina Maracujá</h5>
+                            <h5 class="card-title text-center tt" style="color:purple;">Gelatina Maracujá</h5>
                         </div>
                     </div>
 
                     <div class=" col-md-6 col-lg-3 text-center align-content-end">
-                        <img src="~/Content/img/luva_de_silicone.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
+                        <img src="~/Content/img/luva_de_silicone.png" class="img-fluid efeito-lan" alt="" style="max-width:50%;">
                         <div class="card-body py-3">
-                            <h5 class="card-title text-center tt" style="color:white;">Lisa Luva de Silicone</h5>
+                            <h5 class="card-title text-center tt" style="color:purple;">Lisa Luva de Silicone</h5>
                         </div>
                     </div>
 
                     <div class=" col-md-6 col-lg-3 text-center align-content-end">
                         <img src="~/Content/img/spray_clareador.png" class="img-fluid efeito-lan" alt="" style="max-width:70%;">
                         <div class="card-body py-3">
-                            <h5 class="card-title text-center tt" style="color:white;">Sprays Clareadores</h5>
+                            <h5 class="card-title text-center tt" style="color:purple;">Sprays Clareadores</h5>
                         </div>
                     </div>
                 </div>
@@ -675,8 +739,14 @@
     @*RAMAIS*@
     <section id="ramais" class="reveal">
         <div class="py-5 fw-bolder text-center">
-            <h2 class="tt">
+            <h2 class="tt2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
                 Ramais
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
             </h2>
         </div>
 
@@ -684,10 +754,10 @@
             <table id="ramal" class="table table-striped table-hover display">
                 <thead>
                     <tr>
-                        <th style="background-color:purple; color: white;">Nome</th>
-                        <th style="background-color:purple; color: white;">Ramal</th>
-                        <th style="background-color:purple; color: white;">Email</th>
-                        <th style="background-color:purple; color: white;">Departamento</th>
+                        <th style="background-color: #d30382; color: white;">Nome</th>
+                        <th style="background-color: #d30382; color: white;">Ramal</th>
+                        <th style="background-color: #d30382; color: white;">Email</th>
+                        <th style="background-color: #d30382; color: white;">Departamento</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -997,15 +1067,23 @@
     </section>
 
     @*REGRAS RAMAIS*@
-    <section id="rgramais" class="reveal" style="background-color: darkgreen">
+    <section id="rgramais" class="reveal" style="background-color: purple">
         <div class="container-fluid text-white my-5 pb-5" style="padding-bottom:75px">
             <div class="py-5 fw-bolder text-center d-block align-content-center justify-content-center">
                 <h2 class="tt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+                        <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z" />
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1" />
+                    </svg>
                     Regras do Telefone
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+                        <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z" />
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1" />
+                    </svg>
                 </h2>
             </div>
 
-            <div class="container  py-5 rounded-5" style="background-color: #e6b700">
+            <div class="container  py-5 rounded-5" style="background-color: #340934">
                 <div class="text-center mb-5">
                     Siga estas <strong>instruções</strong> para usar corretamente o <strong>
                         sistema telefônico
