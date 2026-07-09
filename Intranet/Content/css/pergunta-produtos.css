@@ -1,0 +1,246 @@
+.pergunta-produtos-page {
+    min-height: calc(100vh - 180px);
+    padding: 70px 0;
+}
+
+.pergunta-produtos-container {
+    max-width: 960px;
+}
+
+.pergunta-produtos-card {
+    background-color: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(75, 0, 130, 0.14);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(33, 0, 62, 0.18);
+    padding: 48px;
+}
+
+.pergunta-produtos-header {
+    margin: 0 auto 36px;
+    max-width: 720px;
+}
+
+.pergunta-produtos-header h1 {
+    color: darkblue;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.pergunta-produtos-header p {
+    color: #5f5968;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.pergunta-produtos-icon {
+    align-items: center;
+    background: linear-gradient(135deg, darkblue, mediumpurple);
+    border-radius: 18px 0;
+    color: white;
+    display: inline-flex;
+    font-size: 1.35rem;
+    height: 52px;
+    justify-content: center;
+    margin-bottom: 18px;
+    width: 58px;
+}
+
+.pergunta-produtos-textarea {
+    border: 2px solid #ded9e5;
+    border-radius: 14px;
+    line-height: 1.6;
+    min-height: 160px;
+    padding: 16px;
+    resize: vertical;
+}
+
+.pergunta-produtos-textarea:focus {
+    border-color: mediumpurple;
+    box-shadow: 0 0 0 0.25rem rgba(147, 112, 219, 0.18);
+}
+
+.btn-pergunta-produtos {
+    background: linear-gradient(135deg, darkblue, mediumpurple);
+    border: 0;
+    color: white;
+    min-width: 180px;
+    padding: 12px 24px;
+}
+
+.btn-pergunta-produtos:hover,
+.btn-pergunta-produtos:focus {
+    color: white;
+}
+
+.btn-pergunta-produtos:disabled {
+    cursor: wait;
+    opacity: 0.75;
+    transform: none;
+}
+
+.pergunta-produtos-loading {
+    align-items: center;
+    color: #5e2ca5;
+    display: flex;
+    font-weight: 600;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.pergunta-produtos-resposta {
+    background-color: #f8f9ff;
+    border: 1px solid rgba(20, 36, 95, 0.14);
+    border-radius: 18px;
+    margin-top: 32px;
+    padding: 24px;
+}
+
+.pergunta-produtos-resposta-titulo {
+    color: darkblue;
+    margin-bottom: 18px;
+}
+
+.pergunta-produtos-resposta-icone {
+    background-color: #e9edff;
+    color: darkblue;
+    font-size: 0.95rem;
+    height: 36px;
+    width: 36px;
+}
+
+.pergunta-produtos-resposta-titulo h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.pergunta-produtos-resposta-texto {
+    color: #332d3a;
+    font-size: 1rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+
+.pergunta-produtos-resposta-texto strong {
+    color: #1d2b66;
+    font-weight: 700;
+}
+
+.pergunta-produtos-resposta-texto code {
+    background-color: #eef2ff;
+    border-radius: 5px;
+    color: #14245f;
+    padding: 2px 5px;
+}
+
+.resposta-produto {
+    border-color: #d8dff0 !important;
+}
+
+.resposta-produto-cabecalho {
+    background: linear-gradient(135deg, #f3f6ff, #ffffff);
+}
+
+.resposta-produto h3 {
+    color: #141e46;
+    line-height: 1.35;
+}
+
+.resposta-produto-codigo {
+    color: #1d2b66;
+}
+
+.resposta-produto-separador {
+    color: #7a8199;
+    font-weight: 600;
+}
+
+.resposta-produto-numero {
+    align-items: center;
+    background-color: darkblue;
+    border-radius: 999px;
+    color: white;
+    display: inline-flex;
+    font-weight: 800;
+    height: 34px;
+    justify-content: center;
+    width: 34px;
+}
+
+.resposta-produto-label,
+.resposta-dado-rotulo {
+    color: #697495;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+}
+
+.resposta-dado {
+    background-color: #f8faff;
+    border-color: #e1e6f2 !important;
+}
+
+.resposta-dado strong {
+    color: #1d2b66;
+    font-size: 1.02rem;
+}
+
+.resposta-justificativa {
+    background-color: #fff8e7;
+    border: 1px solid #f0d889;
+    border-left: 5px solid #e0a800;
+    color: #463600;
+}
+
+.resposta-justificativa strong {
+    color: #5c4700;
+}
+
+.resposta-texto-normal,
+.resposta-paragrafo {
+    background-color: white;
+    border-color: #e7eaf3 !important;
+}
+
+.resposta-paragrafo {
+    border: 1px solid #e7eaf3;
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+
+.resposta-subtitulo {
+    color: darkblue;
+}
+
+.resposta-subtitulo-icone {
+    background-color: #e9edff;
+    color: darkblue;
+    font-size: 0.82rem;
+    height: 30px;
+    width: 30px;
+}
+
+.resposta-lista .list-group-item {
+    border-color: #e5e9f4;
+    padding: 0.85rem 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .pergunta-produtos-page {
+        padding: 34px 0;
+    }
+
+    .pergunta-produtos-card {
+        border-radius: 18px;
+        padding: 28px 20px;
+    }
+
+    .btn-pergunta-produtos {
+        width: 100%;
+    }
+
+    .pergunta-produtos-resposta {
+        padding: 18px;
+    }
+}
