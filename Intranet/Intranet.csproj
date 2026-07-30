@@ -198,9 +198,12 @@
     <Content Include="Content\img\lisa_pe.png" />
     <Content Include="Content\img\LogoRoxa.png" />
     <Content Include="Content\img\luva_de_silicone.png" />
+    <Content Include="Content\img\rabo_de_cavalo.png" />
     <Content Include="Content\img\SENHA softfree.png" />
+    <Content Include="Content\img\sh_grisalhos.png" />
     <Content Include="Content\img\softHairBranca.png" />
     <Content Include="Content\img\spray_clareador.png" />
+    <Content Include="Content\img\tonico_alecrim.png" />
     <Content Include="Content\img\Walpaper_40_anos.png" />
     <Content Include="Scripts\JavaScript\calendar.js" />
     <Content Include="Scripts\JavaScript\datables.js" />
